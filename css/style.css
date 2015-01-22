@@ -27,12 +27,14 @@ body {
 	cursor:default;
   background:#FFFFFF;
   overflow:hidden;
+}
+.body-padding {
   padding-top:80px;
 }
 
 p {
   /*font-family: "Open Sans", sans-serif;*/
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
   margin: 0px 0px 20px 0px;
   color: #A0ACBA;
 }
@@ -41,7 +43,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   /*font-family: "Open Sans", sans-serif; */
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
   color:#282828;
   line-height:1.2em;    
   margin:0px 0px 20px 0px;
@@ -67,7 +69,7 @@ h2, h2 a {
 
 h3, h3 a {
   /*font-family: 'Open Sans', serif;*/
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
   font-size:30px;
   color:#282828;
   margin:0px 0px 20px 0px;
@@ -75,7 +77,7 @@ h3, h3 a {
 
 h4, h4 a {
   /*font-family: "Open Sans", sans-serif;*/
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
   font-size:22px;
   font-weight:600;
   color: rgb(75,75,75);
@@ -84,7 +86,7 @@ h4, h4 a {
 
 h5, h5 a{
   /*font-family: "Open Sans", sans-serif;*/
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
   font-size:18px;
   color:#282828;
   margin:0px 0px 20px 0px;
@@ -92,7 +94,7 @@ h5, h5 a{
 
 h6, h6 a{
   /*font-family: "Open Sans", sans-serif;*/
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
   font-size:15px;
   color:#A0ACBA;
   margin:0px 0px 15px 0px;
@@ -299,8 +301,7 @@ img.brand:hover  {
 }
 
 .parallax h3{
-  /*font-family: "Open Sans";*/
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
   color: #FFFFFF;
 }
 
@@ -1296,7 +1297,7 @@ ul.rs-slider {
 
 .navbar .nav > li > a, .navbar .nav > li.active > a {
 	/*font-family: 'Open Sans', serif;*/
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
   font-size: 15px;
 	color: #A0ACBA;
 	display: inline-block;
@@ -1469,7 +1470,7 @@ a.meanmenu-reveal {
 	font-size: 1px;
 	display: block;
 	/*font-family: "Open Sans", sans-serif;*/
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
 	font-weight: 700;
   -webkit-transition: all 0ms ease-in; 
      -moz-transition: all 0ms ease-in;
@@ -1727,7 +1728,7 @@ border: 1px solid #C8CFD7;
   border-radius:0px;
   font-size: 14px;
   /*font-family: 'Open Sans', sans-serif;*/
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
   outline:0;
   text-indent: 10px;
   outline: none;
@@ -2145,7 +2146,7 @@ hr.blog{
 
 .shop-item-name {
   /*font-family: "Open Sans", sans-serif;*/
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
   font-size:18px;
   padding:20px 0px 8px 0px;
   text-align:center;
@@ -2224,7 +2225,7 @@ hr.blog{
   border-radius: 0px;
   vertical-align: middle;
   /*font-family: 'Open Sans', sans-serif;*/
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
   font-size: 14px;
   line-height: 20px;
   color:#A0ACBA;
@@ -2510,8 +2511,7 @@ hr.blog{
   color: #A0ACBA;
   background:#FFFFFF;
   border: 1px solid transparent;
-  /*font-family: "Open Sans";*/
-  font-family: 'Droid Sans', sans-serif;
+  font-family: 'Myriad Pro', sans-serif;
   font-size:14px;
   -webkit-transition: all 0s; 
      -moz-transition: all 0s;
