@@ -39,6 +39,9 @@ li {
 .back-to-top {
 	float: left;
 }
+.container {
+	padding: 0 30px;
+}
 .container ul.nav {
 	float: right;
 	padding:23px 0px; 
