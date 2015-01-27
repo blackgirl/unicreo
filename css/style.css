@@ -2833,11 +2833,13 @@ ul.infrestructure>li:before{content:'- '}
 .container.expertise {
   background:url(../img/man_c.png) no-repeat;
   background-position: center;
+  background-position-y: 100%;
   background-size: 40%;
 }
 .container.expertise:hover {
   background:url(../img/man_bw.png) no-repeat;
   background-position: center;
+  background-position-y: 100%;
   background-size: 40%;
 }
 .container.expertise .services-box {
