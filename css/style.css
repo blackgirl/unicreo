@@ -2830,6 +2830,16 @@ article .span10 li {
 ul.infrestructure{list-style:none; padding-bottom: 15px;}
 ul.infrestructure>li:before{content:'- '}
 
+.container.expertise {
+  background:url(../img/man_c.png) no-repeat;
+  background-position: center;
+  background-size: 40%;
+}
+.container.expertise:hover {
+  background:url(../img/man_bw.png) no-repeat;
+  background-position: center;
+  background-size: 40%;
+}
 .container.expertise .services-box {
   text-align: left;
   margin:10px 0;
