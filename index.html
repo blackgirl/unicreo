@@ -718,15 +718,16 @@ We are software and design geeks from Dnepropetrovsk, Ukraine, who formed a team
       var sc1 = $('body').scrollTop();
       var sc2 = $(this).offset().top;
       var h = $('.modal-wrapper').height();
+      var h1 = $(this).height();
       var finalX = sc1 + 80;
       var posX = sc2-h+50;
-      // var trX = $('.modal-triangle').offset().top;
+      var trX = $('.modal-triangle').offset().top;
       if(posX < finalX) {
         posX = finalX;
-        // $('.modal-triangle').css({
-        //   'margin-top': (sc2-(trX-30))
-        // })
       }
+        $('.modal-triangle').css({
+          'margin-top': -((posX+h)-(sc2+h1/2))
+        })
       $('.modal-wrapper').removeClass('hide').css({
           'top': posX
         }).on('mouseleave',function(){
