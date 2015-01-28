@@ -715,11 +715,24 @@ We are software and design geeks from Dnepropetrovsk, Ukraine, who formed a team
   $(document).ready(function(){
     $('.technical-ex article').hover( function(e) {
       var sc = $(this).offset().left;
-      var sc1 = $(this).offset().top;
+      var sc1 = $('body').scrollTop();
+      var sc2 = $(this).offset().top;
       var h = $('.modal-wrapper').height();
-      $('.modal-wrapper').removeClass('hide').css({'top':sc1-h+50}).on('mouseleave',function(){
-            $(this).addClass('hide');
-      });
+      var finalX = sc1 + 80;
+      var posX = sc2-h+50;
+      // var trX = $('.modal-triangle').offset().top;
+      if(posX < finalX) {
+        posX = finalX;
+        // $('.modal-triangle').css({
+        //   'margin-top': (sc2-(trX-30))
+        // })
+      }
+      $('.modal-wrapper').removeClass('hide').css({
+          'top': posX
+        }).on('mouseleave',function(){
+          $(this).addClass('hide');
+        });
+
     });
   });
 </script>

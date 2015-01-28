@@ -2968,6 +2968,7 @@ ul.infrestructure>li:before{content:'- '}
     font-size: 18px;
     padding:15px;
     left:32%;
+    z-index:1;
   }
   .modal-content ul li {
     list-style: none;
