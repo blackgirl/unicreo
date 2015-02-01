@@ -335,7 +335,7 @@ img.brand:hover  {
 
 
 .big-unit-box {
-  background: url(../img/ideas/services.jpg) center bottom #282828;
+  background: url(../img/ideas/services1.jpg) center bottom #282828;
   padding:50px 0px;
 }
 
@@ -390,7 +390,7 @@ img.brand:hover  {
 /* se5rvices */
 
 .services-shortcode {
-  padding: 27px 0px 15px 0px; 
+  padding: 10px 0px 15px 0px; 
   position:relative;
   -webkit-backface-visibility: hidden;
 }
@@ -417,23 +417,54 @@ img.brand:hover  {
 }
 
 /* ICONS */
-.icon-terms::before {
+/*.icon-terms::before {
   content: "\f073";
+}*/
+.proplems .services-icon-2 {
+  overflow: hidden;
 }
-.icon-dialog::before {
+.proplems .services-icon-2 i {
+  width:100%;
+  height:100%;
+  background-size: 90%;
+}
+.icon-terms {
+  background:url(../img/clock_icon.png) no-repeat;
+  background-size: 50% !important;
+  background-position-x: 15px;
+}
+/*.icon-dialog::before {
   content:"\f086";
+}*/
+.icon-dialog {
+  background: url(../img/dialog_icon.png) no-repeat;
+  background-position-x: 5px;
 }
-.icon-delivery::before {
+/*.icon-delivery::before {
   content:  "\f0d1";
+}*/
+.icon-delivery {
+  background: url(../img/delivery_icon.png) no-repeat;
+  background-position: 5px;
 }
-.icon-settings::before {
+/*.icon-settings::before {
   content:  "\f085";
+}*/
+.icon-settings {
+  background: url(../img/settings_icon.png) no-repeat;
 }
-.icon-diagram::before {
+/*.icon-diagram::before {
   content:"\f080";
+}*/
+.icon-diagram {
+  background: url(../img/lack_icon.png) no-repeat;
 }
-.icon-management::before {
+/*.icon-management::before {
   content: "\f0e8";
+}*/
+.icon-management {
+  background: url(../img/manag_icon.png) no-repeat;
+  background-position-x: 5px;
 }
 .services-icon-2 .icon-management,.services-icon-2 .icon-diagram,.services-icon-2 .icon-settings,.services-icon-2 .icon-delivery,.services-icon-2 .icon-dialog,.services-icon-2 .icon-terms {
   left:-2px;
@@ -2807,7 +2838,7 @@ article.row.services-shortcode {
 article .span10>h4 {
   color: #FFF;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 22px;
 }
 h4 label {
   font-weight: 400;

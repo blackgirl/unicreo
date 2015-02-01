@@ -108,7 +108,7 @@
       <div class="span12 proplems">
         <h4>WE HELP OUR CUSTOMERS WITH SOLVING THESE PROBLEMS:</h4>
         <article class="row services-shortcode">
-          <div class="span2 services-icon-2">
+          <div class="span2 services-icon-2 ">
             <i class="icon-terms"></i>
           </div>
           <div class="span10">
@@ -714,26 +714,26 @@ We are software and design geeks from Dnepropetrovsk, Ukraine, who formed a team
 <script>
   $(document).ready(function(){
     $('.technical-ex article').hover( function(e) {
-      var sc = $(this).offset().left;
+      // var sc = $(this).offset().left;
       var sc1 = $('body').scrollTop();
       var sc2 = $(this).offset().top;
       var h = $('.modal-wrapper').height();
       var h1 = $(this).height();
       var finalX = sc1 + 80;
       var posX = sc2-h+50;
-      var trX = $('.modal-triangle').offset().top;
+      // var trX = $('.modal-triangle').offset().top;
       if(posX < finalX) {
         posX = finalX;
       }
-        $('.modal-triangle').css({
-          'margin-top': -((posX+h)-(sc2+h1/2))
-        })
+      // Move
+      $('.modal-triangle').css({
+        'margin-top': -((posX+h)-(sc2+h1/2))
+      })
       $('.modal-wrapper').removeClass('hide').css({
-          'top': posX
-        }).on('mouseleave',function(){
-          $(this).addClass('hide');
-        });
-
+        'top': posX
+      }).on('mouseleave',function(){
+        $(this).addClass('hide');
+      });
     });
   });
 </script>
