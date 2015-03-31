@@ -2518,6 +2518,9 @@ hr.blog{
 
 
 /*	Portfolio */
+#portfolio-items {
+  height:100px;
+}
 .portfolio{
   overflow:hidden;
   margin:0px;
@@ -2529,6 +2532,7 @@ hr.blog{
 
 .portfolio li{
   list-style:none;
+  float:left;
 }
 
 

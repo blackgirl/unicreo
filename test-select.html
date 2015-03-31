@@ -1,0 +1,84 @@
+<html><head>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+<style>
+	body {
+		background-color:#3b6e80;
+	}
+	#header {
+		padding-top:10px;
+		margin-bottom: 30px;
+	}
+	#wrapper {
+		background-color: white;
+		width: 70%;
+		margin: 0 auto;
+		padding: 0px 30px 30px;
+	}
+</style>
+</head>
+<body>
+<div id="wrapper">
+	<div class="row-fluid" style="background-color: whiteSmoke; padding: 20px 10px 5px 10px">
+		<div class="span3">
+		 	<div id="shop_filter" class="btn-group">
+		  		<a class="btn btn-small dropdown-toggle" data-toggle="dropdown" href="#category">
+					<i class="icon-gift"></i>
+					Shop by: Category
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+					<li>
+						<a href="#style">Style</a>
+					</li>
+					<li>
+						<a href="#color">Color</a>
+					</li>
+					<li>
+						<a href="#size">Size</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="span5">
+			<fieldset>
+			<form id="main_form" class="inline-form">
+				<label>Selected Item</label><input type="text" name="filter">
+			</form>
+			</fieldset>
+		</div>
+	</div>
+	
+	<h3>Options</h3>
+
+	<pre>$("#shop_filter").dd_select({<br>
+  		prefix: "Shop by: ",<br>
+  		formID: "main_form",<br>
+  		hiddenFieldName:"filter",<br>
+  		submitOnChange: false,<br>
+  		ajaxCall:{}
+  	});</pre>
+
+
+	
+
+</div><!-- WRAPPER -->
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/dd-select.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+	console.log("ready");
+	$('.dropdown-toggle').dropdown();
+	$("#shop_filter").dd_select({
+  		prefix: "Shop by: ",
+  		formID: "main_form",
+  		hiddenFieldName:"filter",
+  		submitOnChange: false,
+  		ajaxCall:{}
+	});
+});
+</script>
+
+</body></html>
