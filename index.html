@@ -10,10 +10,13 @@
   <meta name="description" content="software development, software outsourcing, out-staffing, design">
   <meta name="keywords" content="software development, software outsourcing, out-staffing, design">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Favicon -->
+  <!-- Favicon -->
   <link href="img/favicon.png" rel="icon" type="image/png">
   <!-- Bootstrap style -->
   <link href="css/bootstrap.min.css" rel="stylesheet">  
+  <!-- slick slider style -->
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   <!-- Flexslider Style -->
   <link href="css/flexslider.css" rel="stylesheet">
   <!-- Flexi slider Style -->
@@ -38,6 +41,7 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300&amp;subset=latin,cyrillic-ext,cyrillic,greek-ext,greek,vietnamese' rel='stylesheet' type='text/css'>
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="js/modernizr.js"></script>
+
     <!-- Internet Explorer condition - HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -111,7 +115,7 @@
           <div class="span2 services-icon-2 ">
             <i class="icon-terms"></i>
           </div>
-          <div class="span10">
+          <div class="span9">
             <h4>Constantly missed deadlines <label for="h4"> (You’ve told this would be ready yesterday!)</label></h4>
             <div class="span6">
               <h4>HOW WE SOLVE IT</h4>
@@ -128,7 +132,7 @@ Strict process.</p>
           <div class="span2 services-icon-2">
             <i class="icon-dialog"></i>
           </div>
-          <div class="span10">
+          <div class="span9">
             <h4>Misunderstanding <label for="h4"> (That’s not what I have asked for!)</label></h4>
             <div class="span6">
               <h4>HOW WE SOLVE IT</h4>
@@ -144,7 +148,7 @@ Strict process.</p>
           <div class="span2 services-icon-2">
             <i class="icon-delivery"></i>
           </div>
-          <div class="span10">
+          <div class="span9">
             <h4>Long delivery of simple tasks or support <label for="h4"> (Why is that taking so long?)</label></h4>
             <div class="span6">
               <h4>HOW WE SOLVE IT</h4>
@@ -160,7 +164,7 @@ Strict process.</p>
           <div class="span2 services-icon-2">
             <i class="icon-settings"></i>
           </div>
-          <div class="span10">
+          <div class="span9">
             <h4>Enormus and increasing amount of bugs <label for="h4"> (Yave you ever tested it?)</label></h4>
             <div class="span6">
               <h4>HOW WE SOLVE IT</h4>
@@ -176,7 +180,7 @@ Strict process.</p>
           <div class="span2 services-icon-2">
             <i class="icon-diagram"></i>
           </div>
-          <div class="span10">
+          <div class="span9">
             <h4>Lack of IT infrastructure:</h4>
             <div class="span12">
               <ul class="infrestructure span6">
@@ -205,7 +209,7 @@ methodologies</p>
           <div class="span2 services-icon-2">
             <i class="icon-management"></i>
           </div>
-          <div class="span10">
+          <div class="span9">
             <h4>Poor management <label for="h4"> (What the hell is going on?!)</label></h4>
             <div class="span6">
               <h4>HOW WE SOLVE IT</h4>
@@ -275,7 +279,7 @@ methodologies</p>
       </ul>
     </section>
 
-<section class="span4 bussiness-ex">
+<section class="span4 bussiness-ex visible-md">
   <div class="mans">
     <div class="b-man"></div>
     <div class="t-man"></div>
@@ -413,19 +417,19 @@ methodologies</p>
 
   <div class="row spacer40" id="portfolio"></div>
   <div class="container" >
-    <div class="row">
+<div class="row show-and-hide-content">
       <div class="span12">
-        <h4>Featured cases</h4>
-        <form id="bootstrapSelectForm" method="post" class="form-horizontal container-filter">
-          <div class="form-group">
-            <div class="col-xs-5 selectContainer">
-              <select name="language" class="form-control" id="f1">
+      <h4 >Featured cases</h4>
+<!--       <form id="bootstrapSelectForm" method="post" class="form-horizontal">
+        <div class="form-group">
+          <div class="col-xs-5 selectContainer">
+              <select name="language" class="form-control">
                   <option value=""></option>
-                  <option id="c#" value="c#">C#</option>
-                  <option id="net" value="net">.Net</option>
-                  <option id="ruby" value="ruby">Ruby</option>
-                  <option id="html" value="html">Html</option>
-                  <option id="javascript" value="javascript">Javascript</option>
+                  <option value="arabic">C#</option>
+                  <option value="english">.Net</option>
+                  <option value="french">Ruby</option>
+                  <option value="german">Html</option>
+                  <option value="other">Javascript</option>
               </select>
               <select name="language" class="form-control">
                   <option value=""></option>
@@ -435,14 +439,21 @@ methodologies</p>
                   <option value="german">Test-cases</option>
               </select>
             </div>
-          </div>
-        </form>
-        
+        </div>
+      </form> -->
+      <!-- <div class="show-and-hide-content"> -->
+        <select>
+            <option data-type="">All</option>
+            <option data-type="">Html</option>
+            <option data-type="">Css</option>
+            <option data-type="3">Ruby</option>
+            <option data-type="4">.Net</option>
+            <option data-type="5">C#</option>
+        </select>
         <div class="owl-carousel carousel-top-navigation">    
-        <section class="row" id="portfolio-items">
+    <section class="row" id="portfolio-items">
           <ul class="portfolio">
-            <li class="c#">
-
+            <li class="hide content content-4">
               <!-- Portfolio Item -->
               <article class="span3 project" data-tags="photography,technology">
                 <div class="project-item-isotope">
@@ -461,7 +472,7 @@ methodologies</p>
               <!-- Portfolio Item End -->
             </li> 
                 
-            <li class="net"> 
+            <li class="hide content content-4">
               <!-- Portfolio Item -->
               <article class="span3 project" data-tags="webdesign,identity">
                 <div class="project-item-isotope">
@@ -481,7 +492,7 @@ methodologies</p>
               <!-- Portfolio Item End -->
             </li>  
                 
-            <li class="c#"> 
+            <li class="hide content content-3">
               <article class="span3 project" data-tags="photography,architecture">
                 <div class="project-item-isotope">
                   <div class="project-image">
@@ -498,7 +509,41 @@ methodologies</p>
               </article>
             </li>  
 
-            <li class="html"> 
+            <li class="hide content content-5">
+              <article class="span3 project" data-tags="technology">
+                <div class="project-item-isotope">
+                  <div class="project-image">
+                    <img src="img/portfolio/4.jpg" alt="sdf">
+                    <span class="divider"></span>
+                    <a href="img/portfolio/4.jpg" class="media-link-1 popup-link" title="">SHOW</a>
+                    <a class="media-link-2" href="Calendar.html">DETAIL</a>                            
+                  </div>
+                  <div class="project-text">
+                    <h5><a href="Calendar.html">Visual calendar</a></h5>
+                      Visual Calendar for Tablets is not your another dull organizer. It will change the way you plan your life. VC is a planner and Mind Map combined.
+Intuitive UI, where you can easily see all your events arranged in time, prioritized with color and categorized with icons, linked together - create them quickly and easily.
+                  </div>              
+                </div>
+              </article>
+            </li> 
+             <li class="hide content content-5">
+              <article class="span3 project" data-tags="technology">
+                <div class="project-item-isotope">
+                  <div class="project-image">
+                    <img src="img/portfolio/4.jpg" alt="sdf">
+                    <span class="divider"></span>
+                    <a href="img/portfolio/4.jpg" class="media-link-1 popup-link" title="">SHOW</a>
+                    <a class="media-link-2" href="Calendar.html">DETAIL</a>                            
+                  </div>
+                  <div class="project-text">
+                    <h5><a href="Calendar.html">Visual calendar</a></h5>
+                      Visual Calendar for Tablets is not your another dull organizer. It will change the way you plan your life. VC is a planner and Mind Map combined.
+Intuitive UI, where you can easily see all your events arranged in time, prioritized with color and categorized with icons, linked together - create them quickly and easily.
+                  </div>              
+                </div>
+              </article>
+            </li> 
+             <li class="hide content content-3">
               <article class="span3 project" data-tags="technology">
                 <div class="project-item-isotope">
                   <div class="project-image">
@@ -516,8 +561,11 @@ Intuitive UI, where you can easily see all your events arranged in time, priorit
               </article>
             </li> 
                 
+           
+
           
           </ul> 
+         <!--  <div class="filter"><a href="javascript:void(0)" class="button js-filter">Filter Slides</a></div> -->
         </section>
       </div>
     
@@ -741,29 +789,56 @@ We are software and design geeks from Dnepropetrovsk, Ukraine, who formed a team
 <!-- Footer End -->
 <script>
   $(document).ready(function(){
-    $('.technical-ex article').hover( function(e) {
-      // var sc = $(this).offset().left;
-      var sc1 = $('body').scrollTop();
-      var sc2 = $(this).offset().top;
-      var h = $('.modal-wrapper').height();
-      var h1 = $(this).height();
-      var finalX = sc1 + 80;
-      var posX = sc2-h+50;
-      // var trX = $('.modal-triangle').offset().top;
-      if(posX < finalX) {
-        posX = finalX;
-      }
-      // Move
-      $('.modal-triangle').css({
-        'margin-top': -((posX+h)-(sc2+h1/2))
+    $('.technical-ex article')
+      .on('mouseenter',function(e) {
+        var sc1 = $('body').scrollTop();
+        var sc2 = $(this).offset().top;
+        var h = $('.modal-wrapper').height();
+        var h1 = $(this).height();
+        var finalX = sc1 + 80;
+        var posX = sc2-h+50;
+        if(posX < finalX) {
+          posX = finalX;
+        }
+
+        // Move
+        $('.modal-triangle').css({
+          'margin-top': -((posX+h)-(sc2+h1/2))
+        })
+
+        $('.modal-wrapper').removeClass('hide').css({
+          'top': posX
+        })
       })
-      $('.modal-wrapper').removeClass('hide').css({
-        'top': posX
-      }).on('mouseleave',function(){
-        $(this).addClass('hide');
+      .on('mouseleave',function(){
+        $('.modal-wrapper').addClass('hide');
       });
-    });
+
   });
+
+  // Portfolio slider & filter
+  $(function () {
+    $(".portfolio").slick({
+      dots: true,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 4
+      });
+
+    var filtered = false;
+
+    $('.show-and-hide-content select').on('change', function() {
+        var x = $(this).find('option:selected').attr('data-type');
+        if(!(x)) {
+          $(".content").show();
+          $('.portfolio').slick('slickUnfilter');
+          filtered = false;
+        } else {
+          $('.portfolio').slick('slickFilter','.content-' + x);
+          filtered = true;
+        }
+    });
+});
 </script>
 <!-- Javascript -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -775,6 +850,7 @@ We are software and design geeks from Dnepropetrovsk, Ukraine, who formed a team
   <script src="js/jquery.fitvids.js"></script>
   <script src="js/jquery.appear.js"></script>  
   <script src="js/retina.js"></script>
+  <script src="js/functions.js"></script>   
   <script src="js/respond.min.js"></script>  
   <script src="js/jquery.parallax-1.1.3.js"></script>
   <script src="js/owl.carousel.min.js"></script>
@@ -784,7 +860,6 @@ We are software and design geeks from Dnepropetrovsk, Ukraine, who formed a team
   <script src="js/sly.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/jquery.zoom.js"></script>
-  <script src="js/functions.js"></script>
-  <script src="js/dd-select.js" type="text/javascript"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 </html>

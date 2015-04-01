@@ -2518,9 +2518,6 @@ hr.blog{
 
 
 /*	Portfolio */
-#portfolio-items {
-  height:100px;
-}
 .portfolio{
   overflow:hidden;
   margin:0px;
@@ -2532,7 +2529,6 @@ hr.blog{
 
 .portfolio li{
   list-style:none;
-  float:left;
 }
 
 
@@ -2629,7 +2625,15 @@ hr.blog{
 		   -o-transition-duration: 0s;
 			  transition-duration: 0s;
 	}   
-
+article.isotope-item {
+  position: relative;
+  text-align: left;
+}
+li.content {
+  display:inline-block;
+  text-align: left;
+  float: left;
+}
 
 .video-content {
   max-width: 100%;

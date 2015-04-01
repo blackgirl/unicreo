@@ -1,4 +1,15 @@
-@media (max-width: 960px) {
+@media (min-width: 1200px) {
+  .offer-content .cases [class*="span"],
+  .offer-content .attachments [class*="span"] {
+      margin-left: 21px;
+  }
+  .offer-content .cases .row,
+  .offer-content .attachments .row {
+      margin-left: 0px;
+  }
+}
+
+@media (max-width: 990px) {
 
   body {
     padding-top:70px;
@@ -12,6 +23,13 @@
     padding-top:40px;
     width:100%;
     clear:both;
+  }
+  .visible-md {
+    display: none;
+  }
+  .bussiness-ex.span4,
+  .technical-ex.span4 {
+    width: 50%;
   }
   
 } 
@@ -125,7 +143,11 @@
 .testimonial-2 .function{
   padding-bottom:20px;
 }
-
+  .bussiness-ex.span4,
+  .technical-ex.span4 {
+    width: 100%;
+    margin: 25px auto;
+  }
 }
 
 
