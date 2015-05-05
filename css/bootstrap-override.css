@@ -32,6 +32,14 @@
     width: 50%;
   }
   
+  select#select1,
+  select#select2 {
+    width:165px;
+    background-position: 145px;
+    background-size: 12px;
+    margin-right:20px;
+  }
+
 } 
 
 /* HERE */
@@ -160,6 +168,7 @@
     margin: 0 30px;
   }
   .big-unit-box article.row.services-shortcode .span9 h4 {
+    color: white;
     padding-left: 75px;
   }
   .big-unit-box article.row.services-shortcode .span6 h4 {
@@ -177,7 +186,7 @@
     margin-left: -105%;
     margin-right: auto;
     border-width: 15px 10px 15px 0px;
-    border-color: transparent #464646 transparent transparent;
+    border-color: transparent #363636 transparent transparent;
   }
   footer .span4.address {
     width: 45%;
@@ -190,6 +199,15 @@
     position:absolute;
     top:90px;
     right: 10px;
+  }
+
+
+  select#select1,
+  select#select2 {
+    width:270px;
+    background-position: 245px;
+    background-size: 15px;
+    margin-right:28px;
   }
 }
 
