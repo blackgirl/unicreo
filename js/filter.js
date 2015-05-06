@@ -23,8 +23,8 @@ $(document).ready(function(){
     for(var i = 0; i < iconClass.length; i++ ) {
       if(self.find('.services-icon>i').hasClass(iconClass[i])) {
         modalClass = iconClass[i];
-        $('[data-tags!='+iconClass[i]+']').addClass('hide');
-        // $('li.attr[data-tags!='+iconClass[i]+']').addClass('hide');
+        $('li[data-tags!='+iconClass[i]+']').addClass('hide');
+        $('li[data-tags='+iconClass[i]+']').removeClass('hide');
         break;
       }
     }
