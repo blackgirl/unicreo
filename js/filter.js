@@ -18,9 +18,14 @@ $(document).ready(function(){
   var modalShow = function(obj) {
     var self = obj;
     var sc1 = $('body').scrollTop();
+    var sc4 = $('#expertise').css('margin-left');
     var sc2 = self.offset().top;
+    var sc3 = self.offset().left;
+
     var h = $('.modal-wrapper').height();
     var h1 = self.height();
+    var w1 = self.width();
+
     var finalX = sc1 + 80;
     var posX = sc2-h+50;
     if(posX < finalX) {
@@ -31,9 +36,8 @@ $(document).ready(function(){
     $('.modal-triangle').css({
       'margin-top': -((posX+h)-(sc2+h1/2))
     })
-
     $('.modal-wrapper').removeClass('hide').css({
-      'top': posX
+      'top': posX, 'left': sc3-(w1+sc4+50)
     })
   };
 

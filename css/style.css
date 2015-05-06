@@ -16,7 +16,9 @@ body {
 	margin: 0;
 	padding: 0;                      
   /*font-family: "Open Sans", sans-serif;*/
-  font-family: 'Myriad Pro', sans-serif;
+  /*font-family: 'Myriad Pro', sans-serif;*/
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 15px;
 	line-height: 20px;
 	color: #8f9cac;
@@ -32,7 +34,9 @@ body {
 
 p {
   /*font-family: "Open Sans", sans-serif;*/
-  font-family: 'Myriad Pro', sans-serif;
+  /*font-family: 'Myriad Pro', sans-serif;*/
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   margin: 0px 0px 20px 0px;
   color: #8f9cac;
 }
@@ -41,7 +45,9 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   /*font-family: "Open Sans", sans-serif; */
-  font-family: 'Myriad Pro', sans-serif;
+  /*font-family: 'Myriad Pro', sans-serif;*/
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   color:#212121;
   line-height:1.2em;    
   margin:0px 0px 20px 0px;
@@ -76,7 +82,8 @@ h2, h2 a {
 
 h3, h3 a {
   /*font-family: 'Open Sans', serif;*/
-  font-family: 'Myriad Pro', sans-serif;
+  /*font-family: 'Myriad Pro', sans-serif;*/
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size:30px;
   color:#212121;
   margin:0px 0px 10px 0px;
@@ -84,7 +91,8 @@ h3, h3 a {
 
 h4, h4 a {
   /*font-family: "Open Sans", sans-serif;*/
-  font-family: 'Myriad Pro', sans-serif;
+  /*font-family: 'Myriad Pro', sans-serif;*/
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size:24px;
   font-weight:600;
   color: rgb(57,71,89);
@@ -93,7 +101,8 @@ h4, h4 a {
 
 h5, h5 a{
   /*font-family: "Open Sans", sans-serif;*/
-  font-family: 'Myriad Pro', sans-serif;
+  /*font-family: 'Myriad Pro', sans-serif;*/
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 20px;
   color:#212121;
   margin:0px 0px 20px 0px;
@@ -101,7 +110,8 @@ h5, h5 a{
 
 h6, h6 a{
   /*font-family: "Open Sans", sans-serif;*/
-  font-family: 'Myriad Pro', sans-serif;
+  /*font-family: 'Myriad Pro', sans-serif;*/
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size:16px;
   color:#8f9cac;
   margin:0px 0px 15px 0px;
@@ -308,7 +318,8 @@ img.brand:hover  {
 }
 
 .parallax h3{
-  font-family: 'Myriad Pro', sans-serif;
+  /*font-family: 'Myriad Pro', sans-serif;*/
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #FFFFFF;
 }
 
@@ -341,6 +352,7 @@ img.brand:hover  {
 }
 .big-unit-box article.row.services-shortcode .span6 h4 {
   color: rgb(75,75,75);
+  margin-bottom:5px;
 }
 
 
@@ -1346,6 +1358,7 @@ ul.rs-slider {
 .navbar .nav > li > a, .navbar .nav > li.active > a {
 	/*font-family: 'Open Sans', serif;*/
   font-family: 'Myriad Pro', sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 15px;
 	color: #8f9cac;
 	display: inline-block;
@@ -1519,6 +1532,7 @@ a.meanmenu-reveal {
 	display: block;
 	/*font-family: "Open Sans", sans-serif;*/
   font-family: 'Myriad Pro', sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: 700;
   -webkit-transition: all 0ms ease-in; 
      -moz-transition: all 0ms ease-in;
@@ -1803,6 +1817,7 @@ border: 1px solid #C8CFD7;
   font-size: 14px;
   /*font-family: 'Open Sans', sans-serif;*/
   font-family: 'Myriad Pro', sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   outline:0;
   text-indent: 10px;
   outline: none;
@@ -2221,6 +2236,7 @@ hr.blog{
 .shop-item-name {
   /*font-family: "Open Sans", sans-serif;*/
   font-family: 'Myriad Pro', sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size:18px;
   padding:20px 0px 8px 0px;
   text-align:center;
@@ -2299,7 +2315,8 @@ hr.blog{
   border-radius: 0px;
   vertical-align: middle;
   /*font-family: 'Open Sans', sans-serif;*/
-  font-family: 'Myriad Pro', sans-serif;
+  /*font-family: 'Myriad Pro', sans-serif;*/
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 20px;
   color:#8f9cac;
@@ -2586,6 +2603,7 @@ hr.blog{
   background:#FFFFFF;
   border: 1px solid transparent;
   font-family: 'Myriad Pro', sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size:14px;
   -webkit-transition: all 0s; 
      -moz-transition: all 0s;
@@ -2874,15 +2892,16 @@ blockquote{
 .user-type-nav span,
 .user-type-nav span:hover {
   color: #fff;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .proplems>h4 {
   text-align: center;
   color: #FFF;
   font-size:24px;
-  font-weight:400;
+  font-weight:200;
+  margin:20px 0px 40px 0px;
 }
 article.row.services-shortcode {
   margin: 0 30px;
@@ -3120,4 +3139,37 @@ ul.infrestructure>li:before{content:'- '}
   .show-and-hide-content h4 {
     font-size: 24px;
     margin-bottom:10px;
+  }
+
+
+
+  .slick-dots {
+    /*bottom: 50px;*/
+    display: none;
+  }
+/*  .slick-dots li button::before {
+    font-size: 8px;
+  }
+  .slick-dots li button {
+    padding: 0;
+  }*/
+
+  .slick-prev::before, .slick-next::before {
+    color: #363636;
+    font-size: 24px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  .slick-prev, .slick-next {
+    top: 97%;
+    width: auto;
+    height: auto;
+    font-size: 24px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  .slick-prev {
+    left: 40%;
+  }
+  .slick-next {
+    right: 40%;
   }
