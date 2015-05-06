@@ -2944,6 +2944,14 @@ ul.infrestructure>li:before{content:'- '}
   font-size: 20px;
   color: white;
 }
+.span8 h3 label {
+  display:inline-block;
+  padding-left:10px;
+}
+.span8 h3 label > a {
+  font-size: 16px;
+  color: #8f9cac;
+}
 .container.expertise {
   /*background:url(../img/man_bw.png) no-repeat;*/
   background-position: center;
@@ -3114,7 +3122,7 @@ ul.infrestructure>li:before{content:'- '}
     position:absolute;
     width:30%;
     background: #363636;
-    color: #fff;
+    color: white;
     font-size: 18px;
     padding:15px;
     left:32%;
@@ -3125,6 +3133,9 @@ ul.infrestructure>li:before{content:'- '}
     width:50%;
     float: left;
     cursor: pointer;
+  }
+  .modal-content ul li:hover {
+    color: #8f9cac;
   }
   .modal-triangle {
     float:right;
