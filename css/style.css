@@ -349,6 +349,7 @@ img.brand:hover  {
 
 .big-unit-box article.row.services-shortcode .span9 h4 {
   color: white;
+  font-family: FontAwesome;
 }
 .big-unit-box article.row.services-shortcode .span6 h4 {
   color: rgb(75,75,75);
@@ -881,7 +882,7 @@ top: 0px;  z-index: 10; cursor: pointer; font-size:0px; text-indent: -2500px; op
 
 .owl-theme .owl-controlls .owl-buttons div{
 	 display: inline-block;
-	   zoom: 1;
+	 zoom: 1;
 	  display: inline;/*IE7 life-saver */
     width: 30px;
     height: 30px; 
@@ -3172,4 +3173,10 @@ ul.infrestructure>li:before{content:'- '}
   }
   .slick-next {
     right: 40%;
+  }
+
+
+
+  #section {
+     padding-top:80px;
   }

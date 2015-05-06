@@ -13,7 +13,10 @@
 
   body {
     padding-top:70px;
-  } 
+  }
+    #section {
+     padding-top:0px;
+  }
       
   .img-slider{
     width:100%;
