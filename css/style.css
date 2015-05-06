@@ -3169,10 +3169,10 @@ ul.infrestructure>li:before{content:'- '}
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
   .slick-prev {
-    left: 40%;
+    left: 45%;
   }
   .slick-next {
-    right: 40%;
+    right: 45%;
   }
 
 
