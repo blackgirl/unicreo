@@ -16,28 +16,42 @@ $(document).ready(function(){
 
 
   var modalShow = function(obj) {
+    var modalClass;
     var self = obj;
-    var sc1 = $('body').scrollTop();
-    var sc4 = $('#expertise').css('margin-left');
-    var sc2 = self.offset().top;
-    var sc3 = self.offset().left;
+    var iconClass = ['icon-android', 'icon-html5', 'icon-windows', 'icon-desktop'];
 
-    var h = $('.modal-wrapper').height();
-    var h1 = self.height();
-    var w1 = self.width();
-
-    var finalX = sc1 + 80;
-    var posX = sc2-h+50;
-    if(posX < finalX) {
-      posX = finalX;
+    for(var i = 0; i < iconClass.length; i++ ) {
+      if(self.find('.services-icon>i').hasClass(iconClass[i])) {
+        modalClass = iconClass[i];
+        $('[data-tags!='+iconClass[i]+']').addClass('hide');
+        // $('li.attr[data-tags!='+iconClass[i]+']').addClass('hide');
+        break;
+      }
     }
 
+    var bodyTop = $('body').scrollTop();
+    var bodyWidth = $('body').width();
+
+    var marginLeft = $('#expertise').css('margin-left');
+    var eTop = self.offset().top;
+
+    var h = $('.modal-wrapper.'+modalClass).height();
+    var w = $('.modal-wrapper.'+modalClass).width();
+    var eH = self.height();
+
+    var finalY = bodyTop + 80;
+    var posY = eTop-h+50;
+    if(posY < finalY) {
+      posY = finalY;
+    }
+    
+    var posX = (bodyWidth/2) - (marginLeft + w);
     // Move
-    $('.modal-triangle').css({
-      'margin-top': -((posX+h)-(sc2+h1/2))
+    $('.modal-wrapper .modal-triangle').css({
+      'margin-top': -((posY+h)-(eTop+eH/2))
     })
     $('.modal-wrapper').removeClass('hide').css({
-      'top': posX, 'left': sc3-(w1+sc4+50)
+      'top': posY, 'left': posX
     })
   };
 
@@ -45,37 +59,16 @@ $(document).ready(function(){
     $('.technical-ex article').on('mouseenter', function() {
       modalShow($(this));
     });
-    // if mobile
-    // .on('click',function(e) {
-
-      // var sc1 = $('body').scrollTop();
-      // var sc2 = $(this).offset().top;
-      // var h = $('.modal-wrapper').height();
-      // var h1 = $(this).height();
-      // var finalX = sc1 + 80;
-      // var posX = sc2-h+50;
-      // if(posX < finalX) {
-      //   posX = finalX;
-      // }
-
-      // // Move
-      // $('.modal-triangle').css({
-      //   'margin-top': -((posX+h)-(sc2+h1/2))
-      // })
-
-      // $('.modal-wrapper').removeClass('hide').css({
-      //   'top': posX
-      // })
-      // );
-    } else {
-      $('.technical-ex article').unbind().on('click', function() {
-        modalShow($(this));
-      });
-    }
-
-    $('.technical-ex article').on('mouseleave',function(){
-      $('.modal-wrapper').addClass('hide');
+  } else {
+    $('.technical-ex article').unbind().on('click', function() {
+      modalShow($(this));
     });
+  }
+
+  $('#expertise .modal-wrapper:visible').on('mouseleave blur focusout',function(){
+    // $('.modal-wrapper').addClass('hide');
+  });
+
 });
 
 // Portfolio slider & filter
