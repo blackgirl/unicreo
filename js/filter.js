@@ -94,7 +94,6 @@ $(document).ready(function(){
 
   $('#expertise .modal-wrapper').on('mouseleave blur focusout',function(){
     $(this).addClass('hide');
-    console.log('HIDE MODAL');
   });
 
 });
