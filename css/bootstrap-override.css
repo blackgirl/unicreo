@@ -7,6 +7,9 @@
   .offer-content .attachments .row {
       margin-left: 0px;
   }
+  .span4:not(:nth-child(2)) .pricing-table p {
+    padding: 19px 0 0;
+  }
 }
 
 @media (max-width: 990px) {
