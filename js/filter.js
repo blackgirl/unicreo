@@ -69,18 +69,12 @@ $(document).ready(function(){
     })
   };
 
-  if(!detectmob) {
-    $('.technical-ex article').on('mouseenter', function() {
-      modalShow($(this));
-    });
-  } else {
-    $('.technical-ex article').unbind().on('click', function() {
-      modalShow($(this));
-    });
-  }
+  $('.technical-ex article').on('mouseenter click', function() {
+    modalShow($(this));
+  });
 
-  $('#expertise .modal-wrapper').on('mouseleave blur focusout',function(){
-    $(this).addClass('hide');
+  $('#expertise .technical-ex').on('mouseleave', function() {
+    $('.modal-wrapper').addClass('hide');
   });
 
 });
