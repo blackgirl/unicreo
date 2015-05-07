@@ -75,18 +75,56 @@ $(document).ready( function() {
   $('.technical-ex article').on('mouseenter click', function() {
     modalShow($(this));
   });
-
   $('#expertise, .modal-wrapper').on('mouseleave blur focusout', function() {
     $('.modal-wrapper').addClass('hide');
   });
 
-  $('.bussiness-ex li, .modal-wrapper li').on('click', function(){
+  // Filter projects by choosen techical expertise
+  $('.modal-wrapper li').on('click', function() {
     var filter = $(this).attr('data-value');
-    // $("select.filter.tech").val(filter);
-    console.log(filter);
+    setExpertise('#select1', filter);
+  });
+
+  // Filter projects by choosen business expertise
+  $('.bussiness-ex li').on('click', function() {
+    var filter = $(this).attr('data-value');
+    setExpertise('#select2', filter);
   });
 
 });
+
+// Set selector for filter-select by expertise type
+function setExpertise(selector,filter) {
+    // if we need "paired" filtering
+    // $(selector).find('option:selected').prop('selected',false);
+    $('.show-and-hide-content select').find('option:selected').prop('selected',false);
+    $(selector+' option[data-value='+filter+']').prop('selected',true).attr('data-value', filter);
+    setInterval(function(){document.location="#portfolio";},100);
+    filterProjects($(selector));
+};
+
+// Portfolio filter
+function filterProjects(obj) {
+    var select = obj;
+    var filter = '';
+    var x = select.find('option:selected').attr('data-value');
+
+    var self = select.attr('id');
+    var that = $('.show-and-hide-content select:not(#'+self+')').attr('id');
+
+    var y = $('#'+that+'').find('option:selected').attr('data-value');
+
+    if(!(x)) {
+      $('.content').show();
+      $('.portfolio').slick('slickUnfilter');
+      filtered = false;
+    } else {
+      filter = '.'+x;
+      if(y) filter = '.'+x+'.'+y;
+      $('.portfolio').slick('slickFilter',filter);
+      filtered = true;
+    }
+};
 
 // Portfolio slider & filter
 $(function () {
@@ -99,26 +137,6 @@ $(function () {
   var filtered = false;
 
   $('.show-and-hide-content select').on('change', function() {
-      var filter = '';
-
-      var x = $(this).find('option:selected').attr('data-value');
-
-      var self = $(this).attr('id');
-      var that = $('.show-and-hide-content select:not(#'+self+')').attr('id');
-
-      var y = $('#'+that+'').find('option:selected').attr('data-value');
-
-      if(!(x)) {
-        $('.content').show();
-        $('.portfolio').slick('slickUnfilter');
-        filtered = false;
-      } else {
-        filter = '.'+x;
-        if(y) filter = '.'+x+'.'+y;
-        console.log(filter)
-        // $('.portfolio').slick('slickFilter','.content-' + x);
-        $('.portfolio').slick('slickFilter',filter);
-        filtered = true;
-      }
+      filterProjects($(this));
   });
 });
