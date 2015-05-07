@@ -1,47 +1,36 @@
 var detectmob = false;  
-$(document).ready(function(){
+$(document).ready( function() {
 
-   if(navigator.userAgent.match(/Android/i)
-    || navigator.userAgent.match(/webOS/i)
-    || navigator.userAgent.match(/iPhone/i)
-    || navigator.userAgent.match(/iPad/i)
-    || navigator.userAgent.match(/iPod/i)
-    || navigator.userAgent.match(/BlackBerry/i)
-    || navigator.userAgent.match(/Windows Phone/i)) {             
-      detectmob = true;
+  if(navigator.userAgent.match(/Android/i)
+  || navigator.userAgent.match(/webOS/i)
+  || navigator.userAgent.match(/iPhone/i)
+  || navigator.userAgent.match(/iPad/i)
+  || navigator.userAgent.match(/iPod/i)
+  || navigator.userAgent.match(/BlackBerry/i)
+  || navigator.userAgent.match(/Windows Phone/i)) {             
+    detectmob = true;
 
-      $(".portfolio").slick({
-        slidesToShow: 2,
-        slidesToScroll: 2
-      });
+    $(".portfolio").slick({
+      slidesToShow: 2,
+      slidesToScroll: 2
+    });
+  }
+
+  // Class binding according to data-tags
+  // $('#expertise .modal-wrapper li, article.project').each( function() {
+  $('article.project').each( function() {
+    var $this = $(this);
+    var tags = $this.data('tags');
+
+    if (tags) {
+      var classes = tags.split(',');
+      for (var i = classes.length - 1; i >= 0; i--) {
+        $this.closest( "li" ).addClass(classes[i]);
+      };
     }
+  });
 
-    $('#expertise .modal-wrapper li').each( function() {
-      var $this = $(this);
-      var tags = $this.data('tags');
-
-      if (tags) {
-        var classes = tags.split(',');
-        for (var i = classes.length - 1; i >= 0; i--) {
-          $this.addClass(classes[i]);
-        };
-      }
-    });
-
-    $("#expertise").hover(function(e){
-      var pWidth = $(this).innerWidth();
-      var pOffset = $(this).offset(); 
-      var x = e.pageX - pOffset.left;
-      if(pWidth/2 > x) {
-        $('.t-man').css({'background-position':'100% 100%'});
-        $('.b-man').css({'background-position':'0 100%'});
-      } else {
-        $('.b-man').css({'background-position':'100% 100%'});
-        $('.t-man').css({'background-position':'0 100%'});
-      }
-    });
-
-
+  // Modal for technical expertise
   var modalShow = function(obj) {
     var modalClass;
     var self = obj;
@@ -82,61 +71,71 @@ $(document).ready(function(){
     })
   };
 
-  if(!detectmob) {
-    $('.technical-ex article').on('mouseenter', function() {
-      modalShow($(this));
-    });
-  } else {
-    $('.technical-ex article').unbind().on('click', function() {
-      modalShow($(this));
-    });
-  }
+  // Event binding for technical expertise's modal
+  $('.technical-ex article').on('mouseenter click', function() {
+    modalShow($(this));
+  });
+  $('#expertise, .modal-wrapper').on('mouseleave blur focusout', function() {
+    $('.modal-wrapper').addClass('hide');
+  });
 
-  $('#expertise .modal-wrapper').on('mouseleave blur focusout',function(){
-    $(this).addClass('hide');
+  // Filter projects by choosen techical expertise
+  $('.modal-wrapper li').on('click', function() {
+    var filter = $(this).attr('data-value');
+    setExpertise('#select1', filter);
+  });
+
+  // Filter projects by choosen business expertise
+  $('.bussiness-ex li').on('click', function() {
+    var filter = $(this).attr('data-value');
+    setExpertise('#select2', filter);
   });
 
 });
 
+// Set selector for filter-select by expertise type
+function setExpertise(selector,filter) {
+    // if we need "paired" filtering
+    // $(selector).find('option:selected').prop('selected',false);
+    $('.show-and-hide-content select').find('option:selected').prop('selected',false);
+    $(selector+' option[data-value='+filter+']').prop('selected',true).attr('data-value', filter);
+    setTimeout(function(){document.location="#portfolio"},100);
+    filterProjects($(selector));
+};
+// Portfolio filter
+function filterProjects(obj) {
+    var select = obj;
+    var filter = '';
+    var x = select.find('option:selected').attr('data-value');
+
+    var self = select.attr('id');
+    var that = $('.show-and-hide-content select:not(#'+self+')').attr('id');
+
+    var y = $('#'+that+'').find('option:selected').attr('data-value');
+
+    if(!(x)) {
+      $('.content').show();
+      $('.portfolio').slick('slickUnfilter');
+      filtered = false;
+    } else {
+      filter = '.'+x;
+      if(y) filter = '.'+x+'.'+y;
+      $('.portfolio').slick('slickFilter',filter);
+      filtered = true;
+    }
+};
+
 // Portfolio slider & filter
 $(function () {
-  // if(detectmob) {
-    $(".portfolio").slick({
-      dots: true,
-      infinite: true,
-      slidesToShow: 4,
-      slidesToScroll: 4
-    });
-  // } else {
-  //   $(".portfolio").slick({
-  //     dots: true,
-  //     infinite: true,
-  //     slidesToShow: 2,
-  //     slidesToScroll: 2
-  //   });
-  // }
+  $(".portfolio").slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4
+  });
   var filtered = false;
 
   $('.show-and-hide-content select').on('change', function() {
-      var filter = '';
-
-      var x = $(this).find('option:selected').attr('data-value');
-
-      var self = $(this).attr('id');
-      var that = $('.show-and-hide-content select:not(#'+self+')').attr('id');
-
-      var y = $('#'+that+'').find('option:selected').attr('data-value');
-
-      if(!(x)) {
-        $('.content').show();
-        $('.portfolio').slick('slickUnfilter');
-        filtered = false;
-      } else {
-        if(y) filter = '.content-'+x+'.content-'+y;
-        else filter = '.content-'+x;
-        // $('.portfolio').slick('slickFilter','.content-' + x);
-        $('.portfolio').slick('slickFilter',filter);
-        filtered = true;
-      }
+      filterProjects($(this));
   });
 });

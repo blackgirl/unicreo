@@ -427,11 +427,13 @@
             _.$nextArrow = $(_.options.nextArrow);
 
             if (_.htmlExpr.test(_.options.prevArrow)) {
-                _.$prevArrow.appendTo(_.options.appendArrows);
+                _.$prevArrow.prependTo(_.options.appendArrows);
+                // _.$prevArrow.appendTo(_.options.appendArrows);
             }
 
             if (_.htmlExpr.test(_.options.nextArrow)) {
-                _.$nextArrow.appendTo(_.options.appendArrows);
+                _.$nextArrow.prependTo(_.options.appendArrows);
+                // _.$nextArrow.appendTo(_.options.appendArrows);
             }
 
             if (_.options.infinite !== true) {
