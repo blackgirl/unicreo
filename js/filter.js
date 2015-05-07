@@ -99,10 +99,9 @@ function setExpertise(selector,filter) {
     // $(selector).find('option:selected').prop('selected',false);
     $('.show-and-hide-content select').find('option:selected').prop('selected',false);
     $(selector+' option[data-value='+filter+']').prop('selected',true).attr('data-value', filter);
-    setInterval(function(){document.location="#portfolio";},100);
+    setTimeout(function(){document.location="#portfolio"},100);
     filterProjects($(selector));
 };
-
 // Portfolio filter
 function filterProjects(obj) {
     var select = obj;
