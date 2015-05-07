@@ -73,7 +73,7 @@ $(document).ready(function(){
     modalShow($(this));
   });
 
-  $('#expertise .technical-ex').on('mouseleave', function() {
+  $('#expertise, .modal-wrapper').on('mouseleave blur focusout', function() {
     $('.modal-wrapper').addClass('hide');
   });
 
