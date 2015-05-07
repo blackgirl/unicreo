@@ -28,19 +28,6 @@ $(document).ready(function(){
       }
     });
 
-    $("#expertise").hover(function(e){
-      var pWidth = $(this).innerWidth();
-      var pOffset = $(this).offset(); 
-      var x = e.pageX - pOffset.left;
-      if(pWidth/2 > x) {
-        $('.t-man').css({'background-position':'100% 100%'});
-        $('.b-man').css({'background-position':'0 100%'});
-      } else {
-        $('.b-man').css({'background-position':'100% 100%'});
-        $('.t-man').css({'background-position':'0 100%'});
-      }
-    });
-
 
   var modalShow = function(obj) {
     var modalClass;

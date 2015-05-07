@@ -31,7 +31,8 @@
     display: none;
   }
   .bussiness-ex.span4,
-  .technical-ex.span4 {
+  .technical-ex.span4,
+  .visible-md {
     width: 50%;
   }
   
