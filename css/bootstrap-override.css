@@ -18,6 +18,10 @@
 }
 }
 
+@media (min-width: 990px and max-width: 1200px) {
+
+}
+
 @media (max-width: 990px) {
 
   body {
@@ -236,10 +240,10 @@ margin:0 auto;float:none;display: block;
     background-position: 245px;
     background-size: 15px;
     margin-right:0px;
-  }
-  select#select1.filter.tech {
     margin-left: 15px;
   }
+/*  select#select1.filter.tech {
+  }*/
   .show-and-hide-content h4 {
     padding-left: 30px;
   }
