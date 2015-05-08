@@ -1056,7 +1056,7 @@
                     _.windowWidth = $(window).width();
                     _.checkResponsive();
                     _.setPosition();
-                }, 50);
+                }, 200);
             }
         });
 

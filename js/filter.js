@@ -12,7 +12,9 @@ $(document).ready( function() {
 
     $(".portfolio").slick({
       slidesToShow: 2,
-      slidesToScroll: 2
+      slidesToScroll: 2,
+      responsive: true,
+      centerMode: false
     });
   }
 
