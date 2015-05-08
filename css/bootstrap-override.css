@@ -16,15 +16,8 @@
     vertical-align: middle;
     height: 140px;
 }
-@media all {
-  .slick-slide {
-    margin-right: 10px;
-  }
-  .slick-slide article.span3.project {
-    width: auto !important;
-    margin-left: 0 !important;
-  }
 }
+
 @media (max-width: 990px) {
 
   body {
@@ -304,3 +297,14 @@ margin:0 auto;float:none;display: block;
 
 
 }
+/*@media (min-width: 1px) {*/
+  .slick-slide {
+    margin-right: 0px;
+  }
+  .slick-slide article.span3,
+  .slick-slide .span3,
+  .slick-slide article.span3.project {
+    width: auto !important;
+    margin-left: 10px !important;
+  }
+/*}*/

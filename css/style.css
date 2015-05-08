@@ -942,7 +942,9 @@ top: 0px;  z-index: 10; cursor: pointer; font-size:0px; text-indent: -2500px; op
 
  
 /* SLY slider */
-
+#portfolio-items {
+  margin: 0 !important;
+}
 
 /* Frame */
 .frame {
@@ -2571,6 +2573,9 @@ hr.blog{
   overflow:hidden;
   margin:0px;
 }
+.slick-track {
+  padding-bottom: 15px;
+}
 .portfolio.slick-initialized.slick-slider {
   padding-top: 44px;
 }
@@ -3221,7 +3226,10 @@ ul.infrestructure>li:before{content:'- '}
     font-family: FontAwesome;
   }
   .slick-prev {
-    left: 40px;
+    left: 0px;
+  }
+  .slick-prev::before {
+    float:right;
   }
   .slick-next {
     right: 0;
