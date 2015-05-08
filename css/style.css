@@ -1694,8 +1694,8 @@ select#select2 {
 .project-item {
   overflow:hidden;
   border:1px solid #C8CFD7;
-  margin:0px 10px 0px 10px;
-  padding: 10px;
+  /*margin:0px 10px 0px 10px;*/
+  /*padding: 10px;*/
   position:relative;
   -webkit-transition: 0.5s ease-in-out;
      -moz-transition: 0.5s ease-in-out;
@@ -1708,7 +1708,7 @@ select#select2 {
 .project-item-isotope {
   overflow:hidden;
   border:1px solid #C8CFD7;
-  padding: 10px;
+  /*padding: 10px;*/
   position:relative;
   -webkit-transition: 0.5s ease-in-out;
      -moz-transition: 0.5s ease-in-out;
@@ -1716,7 +1716,7 @@ select#select2 {
        -o-transition: 0.5s ease-in-out;
           transition: 0.5s ease-in-out;
   background: #FFFFFF;
-  margin-bottom:30px;       
+  /*margin-bottom:30px;       */
 }
 
 .project-item:hover, .project-item-isotope:hover {  

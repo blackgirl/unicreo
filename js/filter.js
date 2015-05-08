@@ -128,7 +128,6 @@ function filterProjects(obj) {
 // Portfolio slider & filter
 $(function () {
   $(".portfolio").slick({
-    dots: true,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 4
