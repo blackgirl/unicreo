@@ -8,10 +8,23 @@
       margin-left: 0px;
   }
   .span4:not(:nth-child(2)) .pricing-table p {
-    padding: 19px 0 0;
+    /*padding: 19px 0 0;*/
+  }
+  .span4 .pricing-table p {
+    display: table-cell;
+    padding:0 15px;
+    vertical-align: middle;
+    height: 140px;
+}
+@media all {
+  .slick-slide {
+    margin-right: 10px;
+  }
+  .slick-slide article.span3.project {
+    width: auto !important;
+    margin-left: 0 !important;
   }
 }
-
 @media (max-width: 990px) {
 
   body {
