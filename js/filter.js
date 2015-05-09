@@ -12,13 +12,15 @@ $(document).ready( function() {
 
     $(".portfolio").slick({
       slidesToShow: 2,
-      slidesToScroll: 2
+      slidesToScroll: 2,
+      responsive: true,
+      centerMode: false
     });
   }
 
   // Class binding according to data-tags
   // $('#expertise .modal-wrapper li, article.project').each( function() {
-  $('article.project').each( function() {
+  $('#expertise .modal-wrapper li, article.project').each( function() {
     var $this = $(this);
     var tags = $this.data('tags');
 
@@ -37,10 +39,12 @@ $(document).ready( function() {
     var iconClass = ['icon-apps', 'icon-ruby', 'icon-net', 'icon-ux'];
 
     for(var i = 0; i < iconClass.length; i++ ) {
-      if(self.find('.services-icon>i').hasClass(iconClass[i])) {
+
+      if(self.html().indexOf(iconClass[i]) > 0) {
         modalClass = iconClass[i];
-        $('.modal-wrapper li[data-tags!='+iconClass[i]+']').addClass('hide');
+        $('.modal-wrapper li').addClass('hide');
         $('.modal-wrapper li[data-tags~='+iconClass[i]+']').removeClass('hide');
+        $('.modal-wrapper li.'+iconClass[i]).removeClass('hide');
         break;
       }
     }
@@ -128,7 +132,6 @@ function filterProjects(obj) {
 // Portfolio slider & filter
 $(function () {
   $(".portfolio").slick({
-    dots: true,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 4
