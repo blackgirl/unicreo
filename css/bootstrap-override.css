@@ -73,7 +73,7 @@
 
 } 
 
-@media (min-width: 799px) and (max-width: 990px) {
+@media (min-width: 799px) and (max-width: 1200px) {
   .proplems.span12,
   .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
     width: 90%;
