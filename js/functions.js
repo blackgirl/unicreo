@@ -26,10 +26,28 @@ $('.skill-shortcode').appear(function() {
 
   $('.zoom-img').zoom();
 
-  $('.popup-link').magnificPopup({
-  		type: 'image'
-  	});
- 
+  // $('.popup-link').magnificPopup({
+  // 		type: 'image'
+  // 	});
+
+var groups = {};
+$('.galleryItem').each(function() {
+  var id = parseInt($(this).attr('data-group'), 10);
+  if(!groups[id]) {
+    groups[id] = [];
+  } 
+  groups[id].push( this );
+});
+
+$.each(groups, function() {
+  $(this).magnificPopup({
+      type: 'image',
+      closeOnContentClick: true,
+      closeBtnInside: false,
+      gallery: { enabled:true }
+  })
+});
+
 /* Nice Scroll */
   	$("html").niceScroll({zindex:99999,cursorborder:"1px solid #464646"});
     
