@@ -79,6 +79,7 @@ $(document).ready( function() {
   $('.technical-ex article').on('mouseenter click', function() {
     modalShow($(this));
   });
+  
   $('#expertise, .modal-wrapper').on('mouseleave blur focusout', function() {
     $('.modal-wrapper').addClass('hide');
   });
@@ -131,10 +132,13 @@ function filterProjects(obj) {
 
 // Portfolio slider & filter
 $(function () {
+  var bodyWidth = $('body').width();
+  var slides = bodyWidth > 1000 ? 4 : (bodyWidth < 600 ? 1 : 2);
+
   $(".portfolio").slick({
     infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 4
+    slidesToShow: slides,
+    slidesToScroll: slides
   });
   var filtered = false;
 
