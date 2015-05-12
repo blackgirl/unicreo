@@ -31,6 +31,9 @@
   .b-man {
     width: 74%;
   }
+  .mans {
+    display: none;
+  }
 }
 
 @media (max-width: 990px) {
