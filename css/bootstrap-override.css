@@ -30,8 +30,12 @@
   }
   .span6.technical-ex article,
   .span6.bussiness-ex ul {
-  width: 100%;
-}
+    width: 100%;
+  }
+  .modal-wrapper {
+    left: auto;
+    right: 51%;
+  }
   .b-man {
     width: 74%;
   }
