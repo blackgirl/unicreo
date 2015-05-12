@@ -337,17 +337,67 @@
 
 
 @media (max-width: 480px) {
-.blog-margin-1 {
-  margin-left:0px;
-}
+  .blog-margin-1 {
+    margin-left:0px;
+  }
 
-.blog-margin-2 {
-  margin-left:0px;
-}
+  .blog-margin-2 {
+    margin-left:0px;
+  }
 
-.blog-margin-3 {
-  margin-left:0px;
-}
+  .blog-margin-3 {
+    margin-left:0px;
+  }
+  /* Problems */
+  .proplems>h4 {
+    margin: 0 5px;
+  }
+  .big-unit-box .proplems .services-icon-2 {
+    float:none;
+    display:block;
+    margin: 0 auto;
+  }
+  .big-unit-box article.row.services-shortcode .span9 h4 {
+    text-align: left;
+    padding-left: 0;
+    -webkit-margin-before: 0;
+  }
+  .big-unit-box article.row.services-shortcode .span9 h4.clearfix {
+    text-align: center;
+  }
+  .big-unit-box article .span9 h4 label {
+    line-height: 1;
+  }
+  .proplems article .span12 + .span6, .proplems article .span6:first-of-type {
+    padding-left: 0px;
+  }
+  .proplems article .span6 {
+    width: 100%;
+    font-weight: 400;
+  }
+  .proplems article .span6:first-of-type {
+    margin-top:20px;
+  }
+  .big-unit-box article.row.services-shortcode .span6 h4 {
+    text-align: left;
+    white-space: nowrap;
+    color: #363636;
+  }
+
+  /* Expertises block */
+  .bussiness-ex li {
+    width: 100%;
+  }
+  .container.expertise .services-icon {
+    float:none;
+  }
+  .technical-ex article {
+    margin-bottom: 25px;
+  }
+  .container.expertise .services-box h4, .container.expertise .services-box p {
+    padding-left:0;
+    margin-left: 0px;
+  }
 
 }
 
