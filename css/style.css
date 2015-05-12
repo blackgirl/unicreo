@@ -3168,6 +3168,7 @@ ul.infrestructure>li:before{content:'- '}
   list-style: none;
   cursor: pointer;
   color: #8f9cac;
+  white-space: nowrap;
 }
   .bussiness-ex li:hover,
   .container.expertise .services-box:hover h4,
