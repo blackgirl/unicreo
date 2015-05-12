@@ -3252,6 +3252,10 @@ ul.infrestructure>li:before{content:'- '}
     font-size: 22px;
     margin-bottom: 20px;
   }
+  h4.section-title {
+    font-size: 22px;
+    font-weight: 500;
+  }
 
 
 
