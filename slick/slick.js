@@ -1054,6 +1054,7 @@
                 clearTimeout(_.windowDelay);
                 _.windowDelay = window.setTimeout(function() {
                     _.windowWidth = $(window).width();
+                    _.windowWidth < 1000 ? (_.windowWidth <= 700 ? _.options.slidesToShow = 1 : _.options.slidesToShow = 2) : _.options.slidesToShow = 4;
                     _.checkResponsive();
                     _.setPosition();
                 }, 200);
