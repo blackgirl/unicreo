@@ -76,10 +76,11 @@ $(document).ready( function() {
   };
 
   // Event binding for technical expertise's modal
-  $('.technical-ex article').on('mouseenter click', function() {
+  // Now on 'click' or / and 'mouseenter'
+  $('.technical-ex article').on(' click', function() {
     modalShow($(this));
   });
-  
+
   $('#expertise, .modal-wrapper').on('mouseleave blur focusout', function() {
     $('.modal-wrapper').addClass('hide');
   });
