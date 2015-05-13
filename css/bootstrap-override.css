@@ -72,12 +72,11 @@
   }
   .bussiness-ex ul,
   .technical-ex article {
-    width: 100%;
-  }
-  .bussiness-ex ul {
+    /*width: 100%;*/
     display: table;
     width: auto;
   }
+
   .technical-ex div>h4 {
     padding-left: 0px;
   }
