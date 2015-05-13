@@ -3215,6 +3215,7 @@ position: absolute;
     margin: 0;
     display: table-row;
     width: 50%;
+    line-height: 1.2;
   }
   .modal-content ul li:not(.hide):nth-child(even):after {
 /*    content:"\a";
