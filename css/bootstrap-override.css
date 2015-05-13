@@ -74,8 +74,16 @@
   .technical-ex article {
     width: 100%;
   }
+  .bussiness-ex ul {
+    display: table;
+    width: auto;
+  }
   .technical-ex div>h4 {
     padding-left: 0px;
+  }
+  .bussiness-ex ul li {
+    display: table-row;
+    width: 50%;
   }
 
   select#select1,
