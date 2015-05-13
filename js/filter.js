@@ -67,22 +67,30 @@ $(document).ready( function() {
     
     var posX = (bodyWidth/2) - (marginLeft + w);
     // Move
-    $('.modal-wrapper .modal-triangle').css({
-      'margin-top': -((posY+h)-(eTop+eH/2))
-    })
+    if($('.modal-wrapper .modal-triangle').css('margin-top') == '0px')
+      $('.modal-wrapper .modal-triangle').css({
+        'margin-top': -((posY+h)-(eTop+(eH/2)))
+      })
     $('.modal-wrapper').removeClass('hide').css({
       'top': posY, 'left': posX
     })
   };
-
+  var modalHide = function() {
+    $('.modal-wrapper li').addClass('hide');
+    $('.modal-wrapper .modal-triangle').css({
+        'margin-top': '0px'
+      })
+    $('.modal-wrapper').addClass('hide');
+  }
   // Event binding for technical expertise's modal
   // Now on 'click' or / and 'mouseenter'
   $('.technical-ex article').on(' click', function() {
+    modalHide();
     modalShow($(this));
   });
 
   $('#expertise, .modal-wrapper').on('mouseleave blur focusout', function() {
-    $('.modal-wrapper').addClass('hide');
+    modalHide();
   });
 
   // Filter projects by choosen techical expertise

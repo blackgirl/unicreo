@@ -70,11 +70,15 @@
   .visible-md {
     width: 50%;
   }
+  .modal-wrapper {
+    right: 48%;
+  }
   .bussiness-ex ul,
   .technical-ex article {
     /*width: 100%;*/
     display: table;
     width: auto;
+    margin:0;
   }
 
   .technical-ex div>h4 {
@@ -83,6 +87,8 @@
   .bussiness-ex ul li {
     display: table-row;
     width: 50%;
+    float:left;
+    padding-right: 0;
   }
 
   select#select1,
