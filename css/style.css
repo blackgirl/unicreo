@@ -3162,15 +3162,19 @@ ul.infrestructure>li:before{content:'- '}
 
 .bussiness-ex ul {
   margin-left: 0;
+  display: table;
+  width: auto;
 }
 .bussiness-ex li {
   font-size:16px;
   float: left;
-  width:42%;
+  width:50%;
   list-style: none;
   cursor: pointer;
   color: #8f9cac;
   white-space: nowrap;
+
+  display: table-row;
 }
   .bussiness-ex li:hover,
   .container.expertise .services-box:hover h4,
