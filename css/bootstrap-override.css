@@ -80,8 +80,10 @@
 
   select#select1,
   select#select2 {
-    width:165px;
-    background-position: 145px;
+    /*width:165px;*/
+    width:300px;
+    /*background-position: 145px;*/
+    background-position: 275px;
     background-size: 12px;
     margin-right:20px;
   }
@@ -273,8 +275,10 @@
 
   select#select1,
   select#select2 {
-    width:270px;
-    background-position: 245px;
+    width:300px;
+    /*width:270px;*/
+    background-position: 275px;
+    /*background-position: 245px;*/
     background-size: 15px;
     margin-right:0px;
     margin-left: 15px;
