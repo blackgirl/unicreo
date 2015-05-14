@@ -2240,9 +2240,9 @@ hr.blog{
 }
 
 .shop-item-name {
-  /*font-family: "Open Sans", sans-serif;*/
+  font-family: "Open Sans", sans-serif;
   /*font-family: 'Myriad Pro', sans-serif;*/
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;*/
   font-size:18px;
   padding:20px 0px 8px 0px;
   text-align:center;
@@ -3208,7 +3208,7 @@ position: absolute;
     display: table;
   }
   .modal-content ul li {
-      list-style: none;
+    list-style: none;
     padding-right: 15px;
     display: inline-block;
     cursor: pointer;
@@ -3216,6 +3216,9 @@ position: absolute;
     display: table-row;
     width: 50%;
     line-height: 1.2;
+  }
+  .modal-content ul li span {
+    font-family: 'FontAwesome',"Open Sans", sans-serif;
   }
   .modal-content ul li:not(.hide):nth-child(even):after {
 /*    content:"\a";
