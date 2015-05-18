@@ -60,7 +60,6 @@ $(document).ready( function() {
 
     var marginLeft = $('#expertise').css('margin-left');
     var eTop = self.offset().top;
-
     var h = $('.modal-wrapper').height();
     var w = $('.modal-wrapper').width();
     var eH = self.height();
@@ -74,9 +73,15 @@ $(document).ready( function() {
     // var posX = (bodyWidth/2) - (marginLeft + w);
     var posX = 30;
     var posR = self.width()+70;
+
     if(bodyWidth < 768) {
       posX = 130;
       posR = 20;
+      if(bodyWidth < 380) {
+        posX = 0;
+        posR = 0;
+        posY = eTop + eH;
+      }
     }
     // Move
     if($('.modal-wrapper .modal-triangle').css('margin-top') == '0px')
