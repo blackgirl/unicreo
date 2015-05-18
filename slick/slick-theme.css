@@ -37,7 +37,7 @@
     color: transparent;
     border: none;
     outline: none;
-    background: transparent;
+    /*background: transparent;*/
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -46,7 +46,7 @@
 {
     color: transparent;
     outline: none;
-    background: transparent;
+    /*background: transparent;*/
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -86,11 +86,11 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    /*content: '←';*/
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    /*content: '→';*/
 }
 
 .slick-next
@@ -104,11 +104,11 @@
 }
 .slick-next:before
 {
-    content: '→';
+    /*content: '→';*/
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    /*content: '←';*/
 }
 
 /* Dots */

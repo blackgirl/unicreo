@@ -47,6 +47,7 @@
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+
 /* mouse grab icon */
 .grabbing { 
     cursor:url(grabbing.png) 8 8, move;
@@ -107,5 +108,28 @@
 }
 
 
-
+/* New controll-buttons next and prev design */
+.owl-controlls.clickable {
+	position:absolute;
+	width:100%;
+	height:50px;
+	left:0;
+	top:auto;
+}
+.owl-next,
+.owl-prev {
+	height: 50px;
+	width: 50px;
+	border-radius: 4px;
+}
+.owl-next {
+	float: right;
+	background: url(../img/arrow_portfolio_1.png) no-repeat;
+	background-size: contain;
+}
+.owl-prev {
+	float: left;
+	background: url(../img/arrow_portfolio_2.png) no-repeat;
+	background-size: contain;
+}
 

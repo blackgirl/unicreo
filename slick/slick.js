@@ -422,13 +422,13 @@
             _.$nextArrow = $(_.options.nextArrow);
 
             if (_.htmlExpr.test(_.options.prevArrow)) {
-                _.$prevArrow.prependTo(_.options.appendArrows);
-                // _.$prevArrow.appendTo(_.options.appendArrows);
+                // _.$prevArrow.prependTo(_.options.appendArrows);
+                _.$prevArrow.appendTo(_.options.appendArrows);
             }
 
             if (_.htmlExpr.test(_.options.nextArrow)) {
-                _.$nextArrow.prependTo(_.options.appendArrows);
-                // _.$nextArrow.appendTo(_.options.appendArrows);
+                // _.$nextArrow.prependTo(_.options.appendArrows);
+                _.$nextArrow.appendTo(_.options.appendArrows);
             }
 
             if (_.options.infinite !== true) {
@@ -1054,7 +1054,7 @@
                 clearTimeout(_.windowDelay);
                 _.windowDelay = window.setTimeout(function() {
                     _.windowWidth = $(window).width();
-                    _.windowWidth < 1000 ? (_.windowWidth <= 700 ? _.options.slidesToShow = 1 : _.options.slidesToShow = 2) : _.options.slidesToShow = 4;
+                    _.windowWidth < 1000 ? (_.windowWidth <= 700 ? (_.options.slidesToShow = 1) : (_.options.slidesToShow = 2)) : (_.options.slidesToShow = 4);
                     _.checkResponsive();
                     _.setPosition();
                 }, 200);
@@ -1365,6 +1365,9 @@
                 _.$slideTrack.css(positionProps);
             }
         }
+        var topOff = _.$slides.first().outerWidth(true)/2;
+            console.log(topOff);
+            $('.slick-next, .slick-prev').css({'top': topOff-30})
     };
 
     Slick.prototype.setDimensions = function() {
@@ -1407,6 +1410,8 @@
 
         var offset = _.$slides.first().outerWidth(true) - _.$slides.first().width();
         if (_.options.variableWidth === false) _.$slideTrack.children('.slick-slide').width(_.slideWidth - offset);
+
+        if(_.listWidth < 600) $('.slick-slide').width(_.listWidth);
     };
 
     Slick.prototype.setFade = function() {
@@ -1987,7 +1992,13 @@
                 _.$nextArrow.addClass('slick-disabled');
                 _.$prevArrow.removeClass('slick-disabled');
             }
+
+
         }
+            var topOff = _.$slides.first().outerWidth(true)/2;
+            console.log(topOff);
+            $('.slick-next, .slick-prev').css({'top': topOff})
+        
     };
 
     Slick.prototype.updateDots = function() {

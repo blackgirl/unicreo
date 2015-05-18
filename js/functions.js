@@ -10,6 +10,7 @@ jQuery(document).ready(function($) {
   "use strict";
 
 
+
 $('.animated').appear(function() {
   $(this).each(function(){   
     $(this).css('visibility','visible');
@@ -30,6 +31,9 @@ $('.skill-shortcode').appear(function() {
   // 		type: 'image'
   // 	});
 
+
+// Show popup image gallery for each portfolio preview
+// Click on "SHOW" link to show popup
 var groups = {};
 $('.galleryItem').each(function() {
   var id = parseInt($(this).attr('data-group'), 10);
@@ -47,6 +51,7 @@ $.each(groups, function() {
       gallery: { enabled:true }
   })
 });
+// !End of popup image gallery
 
 /* Nice Scroll */
   	$("html").niceScroll({zindex:99999,cursorborder:"1px solid #464646"});
@@ -287,13 +292,13 @@ $(window).load(function() {
       paginationSpeed: 2000, 
       autoPlay: false,
       items : 4,
-      itemsDesktop : [1199,3],
+      itemsDesktop: [1199,3],
       itemsDesktopSmall : [979,2],
       itemsTablet: [768,2],
       itemsMobile : [480,1],
-      navigation:true,
-      pagination:false,
-      navigationText : false
+      navigation: true,
+      pagination: false,
+      navigationText: false
   });
   
 
@@ -393,7 +398,6 @@ $(window).load(function() {
       $(window).resize(function(e) {
         
         $frame.sly('reload');
-        
          
       });
   

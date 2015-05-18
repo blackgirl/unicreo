@@ -11,10 +11,12 @@ $(document).ready( function() {
     detectmob = true;
 
     $(".portfolio").slick({
-      slidesToShow: 2,
-      slidesToScroll: 2,
+      slidesToShow: 1,
+      slidesToScroll: 1,
       responsive: true,
-      centerMode: false
+      infinite: true,
+      centerMode: false,
+      arrows: false,
     });
   }
 
@@ -42,14 +44,18 @@ $(document).ready( function() {
 
       if(self.html().indexOf(iconClass[i]) > 0) {
         modalClass = iconClass[i];
-        $('.modal-wrapper li').addClass('hide');
-        $('.modal-wrapper li[data-tags~='+iconClass[i]+']').removeClass('hide');
-        $('.modal-wrapper li.'+iconClass[i]).removeClass('hide');
+        $('.modal-wrapper li').addClass('unable');
+        $('.modal-wrapper li[data-tags~='+iconClass[i]+']').removeClass('unable');
+        $('.modal-wrapper li.'+iconClass[i]).removeClass('unable');
         break;
       }
     }
-
+    // $('.modal-wrapper').css({
+    //   'right': self.width()+60,
+    //   'left':'0'
+    // });
     var bodyTop = $('body').scrollTop();
+    var techTop = $('.technical-ex h4').offset().top;
     var bodyWidth = $('body').width();
 
     var marginLeft = $('#expertise').css('margin-left');
@@ -61,22 +67,28 @@ $(document).ready( function() {
 
     var finalY = bodyTop + 80;
     var posY = eTop-h+50;
-    if(posY < finalY) {
-      posY = finalY;
+    // if(posY < finalY) {
+    //   posY = finalY;
+    // }
+    posY = techTop + 30;
+    // var posX = (bodyWidth/2) - (marginLeft + w);
+    var posX = 30;
+    var posR = self.width()+70;
+    if(bodyWidth < 768) {
+      posX = 130;
+      posR = 20;
     }
-    
-    var posX = (bodyWidth/2) - (marginLeft + w);
     // Move
     if($('.modal-wrapper .modal-triangle').css('margin-top') == '0px')
       $('.modal-wrapper .modal-triangle').css({
         'margin-top': -((posY+h)-(eTop+(eH/2)))
       })
     $('.modal-wrapper').removeClass('hide').css({
-      'top': posY, 'left': posX
+      'top': posY, 'left': posX, 'right': posR,
     })
   };
   var modalHide = function() {
-    $('.modal-wrapper li').addClass('hide');
+    $('.modal-wrapper li').addClass('unable');
     $('.modal-wrapper .modal-triangle').css({
         'margin-top': '0px'
       })
@@ -142,12 +154,14 @@ function filterProjects(obj) {
 // Portfolio slider & filter
 $(function () {
   var bodyWidth = $('body').width();
-  var slides = bodyWidth > 1000 ? 4 : (bodyWidth < 600 ? 1 : 2);
+  var slides = bodyWidth > 1000 ? 4 : (bodyWidth < 700 ? 1 : 2);
 
   $(".portfolio").slick({
     infinite: true,
+    // arrows: true,
+    // responsive: true,
     slidesToShow: slides,
-    slidesToScroll: slides
+    slidesToScroll: slides,
   });
   var filtered = false;
 
