@@ -96,7 +96,7 @@ $(document).ready( function() {
   }
   // Event binding for technical expertise's modal
   // Now on 'click' or / and 'mouseenter'
-  $('.technical-ex article').on(' click', function() {
+  $('.technical-ex article').on('mouseenter focus click', function() {
     modalHide();
     modalShow($(this));
   });
