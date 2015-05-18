@@ -1365,9 +1365,10 @@
                 _.$slideTrack.css(positionProps);
             }
         }
-        var topOff = _.$slides.first().outerWidth(true)/2;
-            console.log(topOff);
-            $('.slick-next, .slick-prev').css({'top': topOff-30})
+            var topOff = _.$slides.first().outerWidth()/2;
+            console.log(topOff, $('.slick-next, .slick-prev').css('top'));
+            if( $('.slick-next, .slick-prev').css('top') != topOff+'px')
+                $('.slick-next, .slick-prev').css({'top': topOff-30})
     };
 
     Slick.prototype.setDimensions = function() {
@@ -1995,9 +1996,11 @@
 
 
         }
-            var topOff = _.$slides.first().outerWidth(true)/2;
+            var topOff = _.$slides.first().outerWidth()/2;
             console.log(topOff);
-            $('.slick-next, .slick-prev').css({'top': topOff})
+                        if( $('.slick-next, .slick-prev').css('top') != topOff+'px')
+
+            $('.slick-next, .slick-prev').css({'top': topOff-30})
         
     };
 
