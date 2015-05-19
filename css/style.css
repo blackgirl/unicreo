@@ -3194,7 +3194,7 @@ ul.infrestructure.span6 {
   cursor: pointer;
   color: #8f9cac;
   white-space: nowrap;
-  text-overflow: "..";
+  text-overflow: ellipsis;
   overflow: hidden;
   /*display: table-row;*/
 }
