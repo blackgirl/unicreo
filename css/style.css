@@ -3220,6 +3220,7 @@ ul.infrestructure.span6 {
   left: auto;
   display: inline-block;
   z-index: 1;
+  overflow: visible;
   }
   .modal-wrapper.hide {
     display: none;
