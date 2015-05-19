@@ -41,7 +41,6 @@ $(document).ready( function() {
     var iconClass = ['icon-apps', 'icon-ruby', 'icon-net', 'icon-ux'];
 
     for(var i = 0; i < iconClass.length; i++ ) {
-
       if(self.html().indexOf(iconClass[i]) > 0) {
         modalClass = iconClass[i];
         $('.modal-wrapper li').addClass('unable');
@@ -50,20 +49,14 @@ $(document).ready( function() {
         break;
       }
     }
-    // $('.modal-wrapper').css({
-    //   'right': self.width()+60,
-    //   'left':'0'
-    // });
+    
     var bodyTop = $('body').scrollTop();
-    // var techTop = $('.technical-ex h4').offset().top + $('.technical-ex h4').height();
     var techTop = $('.technical-ex .services-box:nth-child(1)').offset().top;
     var busLeft = $('.bussiness-ex').offset().left;
     var bodyWidth = $('body').width();
-
-    var marginLeft = $('#expertise').css('margin-left');
+    // var marginLeft = $('#expertise').css('margin-left');
     var marginRight = parseInt($('#expertise').css('margin-right'));
     var eTop = self.offset().top;
-    // var eH = self.height();
     var eH = $('.services-box').height();
     var modalH = (eH*4);
 
@@ -84,14 +77,14 @@ $(document).ready( function() {
     else var coff = (eH/2)-10;
 
     // Move
-    if($('.modal-wrapper .modal-triangle').css('margin-top') == '0px')
-      $('.modal-wrapper .modal-triangle').css({
-        'margin-top': (eH-$('.modal-wrapper').height() + (eTop-techTop-coff))
-        // 'margin-top': -(modalH-((eTop-techTop)+eH))
-      })
     $('.modal-wrapper').removeClass('hide').css({
       'top': posY, 'left': posX, 'right': posR, 'min-height': modalH,
     })
+    if($('.modal-wrapper .modal-triangle').css('margin-top') == '0px')
+      $('.modal-wrapper .modal-triangle').css({
+        'margin-top': (eH-$('.modal-wrapper').height() + (eTop-posY-coff))
+        // 'margin-top': -(modalH-((eTop-techTop)+eH))
+      })
   };
   var modalHide = function() {
     $('.modal-wrapper li').addClass('unable');

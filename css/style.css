@@ -3194,7 +3194,8 @@ ul.infrestructure.span6 {
   cursor: pointer;
   color: #8f9cac;
   white-space: nowrap;
-
+  text-overflow: "..";
+  overflow: hidden;
   /*display: table-row;*/
 }
   .bussiness-ex li:hover,
@@ -3240,14 +3241,20 @@ ul.infrestructure.span6 {
     display: table-row;
     width: 25%;
     line-height: 1.2;
-
+    overflow: hidden;
+    text-overflow: ellipsis;
     float:left;
   }
+/*  .modal-content ul li:nth-child(2n)::before {
+    content: "\00a0 ";
+  }*/
   .modal-content ul li.icon-windows::before {
     content:"";
   }
   .modal-content ul li span {
     font-family: 'FontAwesome',"Open Sans", sans-serif;
+    white-space: nowrap;
+    text-overflow: "..";
   }
   .unable {
     opacity: .3;
