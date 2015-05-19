@@ -2537,13 +2537,14 @@ hr.blog{
 }
 
 .pricing-table-plan-title {
-  font-size:28px;
+  font-size:24px;
   line-height: 30px;
   padding:0px 5px;
+  white-space: nowrap;
 }
 
 .pricing-table-plan-price {
-  font-size: 28px;
+  font-size: 24px;
   padding-top: 20px;
   line-height: 30px;
 }
@@ -2564,7 +2565,11 @@ hr.blog{
   -webkit-transform: scale(1.05,1.05);
 }
 
-
+.pricing-table p {
+  height: 120px;
+  vertical-align: middle;
+  display:table-cell;
+}
            
 
 
@@ -2963,7 +2968,9 @@ ul.infrestructure {
   color: white;
 }
 ul.infrestructure>li:before{content:'- '}
-
+ul.infrestructure.span6 {
+  width: 100%;
+}
 .big-unit-box article .span6 p,
 .big-unit-box article .span9 h4 label,
 .big-unit-box article .span12 li,
@@ -3058,7 +3065,7 @@ ul.infrestructure>li:before{content:'- '}
 }
 .mans {
   /*padding: 0;*/
-  height: 380px;
+  height: 375px;
   width: 40%;
   padding: 0px 0;
   margin-left: -30px;
@@ -3208,6 +3215,7 @@ ul.infrestructure>li:before{content:'- '}
   color: white;
   font-size: 18px;
   padding: 15px;
+  padding-bottom: 0px;
   right: 32%;
   left: auto;
   display: inline-block;
@@ -3246,7 +3254,7 @@ ul.infrestructure>li:before{content:'- '}
   .modal-content ul {
     padding-top: 27px;
     padding-bottom: 30px;
-    padding: 25px 0 30px 10px;
+    padding: 35px 0 35px 10px;
   }
   .modal-content ul li:not(.hide):nth-child(even):after {
 /*    content:"\a";
@@ -3276,7 +3284,7 @@ ul.infrestructure>li:before{content:'- '}
     color: #8f9cac;
   }
   .modal-content ul li:not(.unable) {
-    font-weight: 600;
+    font-weight: 400;
     opacity: 0.7;
   }
   .modal-content ul li:not(.unable):hover {

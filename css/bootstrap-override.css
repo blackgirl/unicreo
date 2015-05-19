@@ -49,8 +49,19 @@
   .slick-next, .slick-prev {
     top: 100px;
   }
+  .modal-wrapper {
+    height: auto;
+  }
   .modal-content ul li {
-    width: 33%;
+    width: 50%;
+    font-size: 16px;
+  }
+  .modal-content ul {
+    padding-top: 0;
+  }
+  .big-unit-box-inside .span4,
+  .span4.pricing-item {
+    width: 280px;
   }
 }
 
