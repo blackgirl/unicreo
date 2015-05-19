@@ -1396,7 +1396,9 @@
 
         if(_.options.vertical === false && _.options.variableWidth === false) {
             _.slideWidth = Math.ceil(_.listWidth / _.options.slidesToShow);
+            console.log('IMG WIDTH',_.slideWidth);// -28px
             _.$slideTrack.width(Math.ceil((_.slideWidth * _.$slideTrack.children('.slick-slide').length)));
+            $('select.filter').css({"width":_.slideWidth - 28,"background-position":_.slideWidth - 58});
         } else if (_.options.variableWidth === true) {
             var trackWidth = 0;
             _.slideWidth = Math.ceil(_.listWidth / _.options.slidesToShow);

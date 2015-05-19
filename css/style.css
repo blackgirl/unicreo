@@ -1703,12 +1703,14 @@ select#select2 {
   background-size: 15px;
   -webkit-appearance: none;
   font-size: 18px;
-  margin-right:28px;
   margin-bottom:15px;
   height: auto;
   font-family: 'Open-Sans',sans-serif;
   font-weight: 400;
   line-height: 32px;
+}
+select#select1 {
+  margin-right:26px;
 }
 .project-item {
   overflow:hidden;
