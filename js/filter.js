@@ -81,7 +81,7 @@ $(document).ready( function() {
       }
     }
     if( $('.modal-wrapper').height() > modalH) var coff = eH/2;
-    else var coff = 15;
+    else var coff = (eH/2)-10;
 
     // Move
     if($('.modal-wrapper .modal-triangle').css('margin-top') == '0px')
