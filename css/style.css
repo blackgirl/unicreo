@@ -6,7 +6,26 @@
 ::-moz-selection { background: #999; color: #fff; text-shadow: none; }
 ::selection { background: #999; color: #fff; text-shadow: none; }
 :focus { outline-color: transparent!important; outline-style: none!important; }
-
+/* font-family: "MyriadProRegular"; */
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../font/MyriadPro/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../font/MyriadPro/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../font/MyriadPro/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../font/MyriadPro/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProSemiBold"; */
+@font-face {
+    font-family: "MyriadProSemiBold";
+    src: url("../font/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.eot");
+    src: url("../font/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../font/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+    url("../font/MyriadPro/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 html {
 	overflow-y:scroll;
 	background:#fff;
