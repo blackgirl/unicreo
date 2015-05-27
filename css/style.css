@@ -3347,7 +3347,7 @@ ul.infrestructure.span6 {
     height: 50px;
     background-size: contain;
     z-index: 999;
-    opacity: .7;
+    /*opacity: .7;*/
   }
   .slick-prev {
     left: 0px;
@@ -3364,7 +3364,7 @@ ul.infrestructure.span6 {
     background-size: contain;
   }
   .slick-prev:hover, .slick-next:hover {
-    opacity: 1;
+    opacity:.8;
   }
   #section {
      padding-top:80px;
