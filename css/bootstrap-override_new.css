@@ -124,6 +124,9 @@
   .slick-next, .slick-prev {
     top: 150px;
   }
+  .modal-content {
+    padding: 0;
+  }
   .modal-content ul li {
     width: 50%;
   }
@@ -137,7 +140,9 @@
   .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
     width: 90%;
   }
-
+  .modal-content {
+    padding: 0;
+  }
   
 }
 /* HERE */

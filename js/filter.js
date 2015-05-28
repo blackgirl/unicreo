@@ -51,7 +51,7 @@ $(document).ready( function() {
     }
     
     var bodyTop = $('body').scrollTop();
-    var techTop = $('.technical-ex .services-box:nth-child(1)').offset().top;
+    var techTop = $('.technical-ex .services-box:nth-child(1)').find('.services-icon').offset().top;
     var busLeft = $('.bussiness-ex').offset().left;
     var bodyWidth = $('body').width();
     var marginRight = parseInt($('#expertise').css('margin-right'));
@@ -59,7 +59,7 @@ $(document).ready( function() {
     var eH = $('.services-box').height();
     var tH = parseInt($('.modal-triangle').css('border-left-width'));
     var iH = $('.services-icon').height();
-    var modalH = (eH*4);
+    var modalH = (eH*4)+1;
 
     var posY = techTop;
     var posX = busLeft;
@@ -74,10 +74,10 @@ $(document).ready( function() {
         posY = eTop + eH;
       }
     }
-    if( $('.modal-wrapper').height() > modalH) {
-      var coff = (eH/2);
+    if( $('.mans').css('display') == 'none') {
+      var coff = (eH/2)-(tH+4);
     } else {
-      var coff = ((eH/2)-(iH/2)-(tH/2));
+      var coff = (eH/2)-(tH);
     }
 
     // Move
