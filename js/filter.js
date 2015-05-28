@@ -58,11 +58,12 @@ $(document).ready( function() {
     var marginRight = parseInt($('#expertise').css('margin-right'));
     var eTop = self.offset().top;
     var eH = $('.services-box').height();
+    var iH = $('.services-icon').height();
     var modalH = (eH*4);
 
     var posY = techTop;
     var posX = busLeft;
-    var posR = self.width()+marginRight+ 15;
+    var posR = self.width()+marginRight+15;
 
     if(bodyWidth < 768) {
       posX = 130;
@@ -74,7 +75,7 @@ $(document).ready( function() {
       }
     }
     if( $('.modal-wrapper').height() > modalH) var coff = eH/2;
-    else var coff = (eH/2)-10;
+    else var coff = (eH/2)-(iH/2);
 
     // Move
     $('.modal-wrapper').removeClass('hide').css({
