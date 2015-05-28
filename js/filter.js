@@ -54,10 +54,10 @@ $(document).ready( function() {
     var techTop = $('.technical-ex .services-box:nth-child(1)').offset().top;
     var busLeft = $('.bussiness-ex').offset().left;
     var bodyWidth = $('body').width();
-    // var marginLeft = $('#expertise').css('margin-left');
     var marginRight = parseInt($('#expertise').css('margin-right'));
     var eTop = self.offset().top;
     var eH = $('.services-box').height();
+    var tH = parseInt($('.modal-triangle').css('border-left-width'));
     var iH = $('.services-icon').height();
     var modalH = (eH*4);
 
@@ -74,8 +74,11 @@ $(document).ready( function() {
         posY = eTop + eH;
       }
     }
-    if( $('.modal-wrapper').height() > modalH) var coff = eH/2;
-    else var coff = (eH/2)-(iH/2);
+    if( $('.modal-wrapper').height() > modalH) {
+      var coff = (eH/2);
+    } else {
+      var coff = ((eH/2)-(iH/2)-(tH/2));
+    }
 
     // Move
     $('.modal-wrapper').removeClass('hide').css({
@@ -86,7 +89,11 @@ $(document).ready( function() {
         'margin-top': (eH-$('.modal-wrapper').height() + (eTop-posY-coff))
         // 'margin-top': -(modalH-((eTop-techTop)+eH))
       })
+    
+    console.log($('.modal-wrapper .modal-triangle').css('margin-top'));
+
   };
+
   var modalHide = function() {
     $('.modal-wrapper li').addClass('unable');
     $('.modal-wrapper .modal-triangle').css({
