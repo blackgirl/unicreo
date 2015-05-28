@@ -213,11 +213,11 @@ $(window).load(function() {
     			}
     		})
     		// initialize isotope
-    		$container.isotope({
-    		  // options...
-    		  itemSelector : '.project',
-    		  layoutMode   : 'fitRows'
-    		});
+    		// $container.isotope({
+    		 
+    		//   itemSelector : '.project',
+    		//   layoutMode   : 'fitRows'
+    		// });
     		// filter items
     		$('#portfolio-filter li a').click(function(){
     			var selector = $(this).attr('data-filter');
@@ -287,19 +287,19 @@ $(window).load(function() {
  });
 
 
-  $(".carousel-top-navigation").owlCarousel({
-      slideSpeed : 600,
-      paginationSpeed: 2000, 
-      autoPlay: false,
-      items : 4,
-      itemsDesktop: [1199,3],
-      itemsDesktopSmall : [979,2],
-      itemsTablet: [768,2],
-      itemsMobile : [480,1],
-      navigation: true,
-      pagination: false,
-      navigationText: false
-  });
+  // $(".carousel-top-navigation").owlCarousel({
+  //     slideSpeed : 600,
+  //     paginationSpeed: 2000, 
+  //     autoPlay: false,
+  //     items : 4,
+  //     itemsDesktop: [1199,3],
+  //     itemsDesktopSmall : [979,2],
+  //     itemsTablet: [768,2],
+  //     itemsMobile : [480,1],
+  //     navigation: true,
+  //     pagination: false,
+  //     navigationText: false
+  // });
   
 
 
