@@ -150,9 +150,8 @@ $(window).load(function() {
     		if (window.location.hash!='' && window.location.hash != '#portfolio' && window.location.hash != '#contacts') {
     			filter_projects( '.' + window.location.hash.replace('#','') );
     		}
-    	}
-    })
-	})();
+    	})
+  })();
 
 // FlexSlider 
 $(window).load(function() {
