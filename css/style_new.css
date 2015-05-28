@@ -461,6 +461,10 @@ padding-top: 0;
 .span2.services-icon-2 {
   margin-left: 45px;
 }
+.big-unit-box-inside .services-icon-1, .services-icon-2 {
+ width: 62px;
+  height: 62px;
+}
 
 /* ICONS */
 /*.icon-terms::before {
@@ -3275,7 +3279,7 @@ ul.infrestructure.span6 {
   background: #363636;
   color: white;
   font-size: 18px;
-  padding: 15px;
+  padding: 0 15px;
   padding-bottom: 0px;
   right: 32%;
   left: auto;
@@ -3300,7 +3304,6 @@ ul.infrestructure.span6 {
     margin: 0;
     display: table-row;
     width: 25%;
-    line-height: 1.2;
     overflow: hidden;
     text-overflow: ellipsis;
     float:left;
@@ -3312,17 +3315,26 @@ ul.infrestructure.span6 {
     content:"";
   }
   .modal-content ul li span {
-    font-family: 'FontAwesome',"Open Sans", sans-serif;
+    cursor: pointer;
+    /*font-family: 'FontAwesome',"Open Sans", sans-serif;*/
+    font-family: 'MyriadProRegular',"Open Sans", sans-serif;
+    font-size: 20px;
+    line-height: 1.3;
     white-space: nowrap;
-    text-overflow: "..";
+    text-overflow: ellipsis;
+  }
+  .modal-content {
+    padding: 28px 0;
   }
   .unable {
     opacity: .3;
   }
   .modal-content ul {
-    padding-top: 27px;
+    /*padding-top: 27px;
     padding-bottom: 30px;
-    padding: 35px 0 35px 10px;
+    padding: 35px 0 35px 10px;*/
+    padding: 0;
+    margin: 17px 0;
   }
   .modal-content ul li:not(.hide):nth-child(even):after {
 /*    content:"\a";
@@ -3422,7 +3434,7 @@ ul.infrestructure.span6 {
     background-size: contain;
   }
   .slick-prev:hover, .slick-next:hover {
-    opacity:.8;
+    /*opacity:.8;*/
   }
   #section {
      padding-top:80px;
