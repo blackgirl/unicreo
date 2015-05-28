@@ -114,8 +114,8 @@ $(document).ready( function() {
 
   // Filter projects by choosen techical expertise
   $('.modal-wrapper li').on('click', function() {
-    var filter = $(this).attr('data-value');
-    setExpertise('#select1', filter);
+    if(!($(this).is('.unable')))
+      setExpertise('#select1', $(this).attr('data-value'));
   });
 
   // Filter projects by choosen business expertise
