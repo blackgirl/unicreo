@@ -97,8 +97,8 @@ h3, h3 a {
 
 h4, h4 a {
   font-family: "MyriadProSemiBold", sans-serif;  
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 24px;
+  /*font-weight: 600;*/
   color: rgb(57,71,89);
   margin: 0px 0px 15px 0px;
 }
@@ -361,8 +361,8 @@ img.brand:hover  {
   font-family:'MyriadProSemiBold',sans-serif;
   margin-bottom: 5px;
   margin-top: 5px;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 24px;
+  /*font-weight: 600;*/
 }
 .big-unit-box article.row.services-shortcode .span6 h4.closer {
 padding-top: 0;
@@ -419,7 +419,7 @@ padding-top: 0;
   width:100%;
   position:relative;
   overflow: hidden;
-  padding-top:45px;  
+  padding-top: 45px;  
 }
 
 .media-content-2{
@@ -443,8 +443,8 @@ padding-top: 0;
 
 .services-icon-1, .services-icon-2{
   position:relative;
-  width: 82px;
-  height: 82px;
+  width: 72px;
+  height: 72px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
@@ -461,7 +461,7 @@ padding-top: 0;
 .span2.services-icon-2 {
   margin-left: 45px;
 }
-.big-unit-box-inside .services-icon-1, .services-icon-2 {
+.big-unit-box-inside .services-icon-2 {
  width: 62px;
   height: 62px;
 }
@@ -2985,13 +2985,13 @@ blockquote{
 .proplems>h4 {
   text-align: center;
   color: #FFF;
-  font-size: 30px;
+  font-size: 24px;
   font-family: 'MyriadPro',sans-serif;
   font-weight: 400;
   margin: 0px 0px 30px 0px;
 }
 h4.problems-title {
-  padding-left: 30px;
+  padding-left: 24px;
   display: inline-block;
 }
 article.row.services-shortcode {
@@ -3035,7 +3035,7 @@ ul.infrestructure.span6 {
 .big-unit-box article .span9 h4 label,
 .big-unit-box article .span12 li,
 .big-unit-box article .span6 li {
-  font-size: 25px;
+  font-size: 20px;
   color: white;
   line-height: 24px;
   font-weight: 400;

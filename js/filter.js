@@ -1,6 +1,5 @@
 var detectmob = false;  
 $(document).ready( function() {
-
   if(navigator.userAgent.match(/Android/i)
   || navigator.userAgent.match(/webOS/i)
   || navigator.userAgent.match(/iPhone/i)
@@ -21,7 +20,6 @@ $(document).ready( function() {
   }
 
   // Class binding according to data-tags
-  // $('#expertise .modal-wrapper li, article.project').each( function() {
   $('#expertise .modal-wrapper li, article.project').each( function() {
     var $this = $(this);
     var tags = $this.data('tags');
@@ -49,7 +47,7 @@ $(document).ready( function() {
         break;
       }
     }
-    
+  
     var bodyTop = $('body').scrollTop();
     var techTop = $('.technical-ex .services-box:nth-child(1)').find('.services-icon').offset().top;
     var busLeft = $('.bussiness-ex').offset().left;
@@ -60,7 +58,6 @@ $(document).ready( function() {
     var tH = parseInt($('.modal-triangle').css('border-left-width'));
     var iH = $('.services-icon').height();
     var modalH = (eH*4)+1;
-
     var posY = techTop;
     var posX = busLeft;
     var posR = self.width()+marginRight+15;
@@ -74,11 +71,8 @@ $(document).ready( function() {
         posY = eTop + eH;
       }
     }
-    if( $('.mans').css('display') == 'none') {
-      var coff = (eH/2)-(tH+4);
-    } else {
-      var coff = (eH/2)-(tH);
-    }
+    if( $('.mans').css('display') == 'none') var coff = (eH/2)-(tH+4);
+    else var coff = (eH/2)-(tH);
 
     // Move
     $('.modal-wrapper').removeClass('hide').css({
@@ -87,11 +81,7 @@ $(document).ready( function() {
     if($('.modal-wrapper .modal-triangle').css('margin-top') == '0px')
       $('.modal-wrapper .modal-triangle').css({
         'margin-top': (eH-$('.modal-wrapper').height() + (eTop-posY-coff))
-        // 'margin-top': -(modalH-((eTop-techTop)+eH))
       })
-    
-    console.log($('.modal-wrapper .modal-triangle').css('margin-top'));
-
   };
 
   var modalHide = function() {
@@ -102,7 +92,6 @@ $(document).ready( function() {
     $('.modal-wrapper').addClass('hide');
   }
   // Event binding for technical expertise's modal
-  // Now on 'click' or / and 'mouseenter'
   $('.technical-ex article').on('mouseenter focus click', function() {
     modalHide();
     modalShow($(this));
@@ -123,7 +112,6 @@ $(document).ready( function() {
     var filter = $(this).attr('data-value');
     setExpertise('#select2', filter);
   });
-
 });
 
 // Set selector for filter-select by expertise type
@@ -140,10 +128,8 @@ function filterProjects(obj) {
     var select = obj;
     var filter = '';
     var x = select.find('option:selected').attr('data-value');
-
     var self = select.attr('id');
     var that = $('.show-and-hide-content select:not(#'+self+')').attr('id');
-
     var y = $('#'+that+'').find('option:selected').attr('data-value');
 
     if(!(x)) {
@@ -165,8 +151,6 @@ $(function () {
 
   $(".portfolio").slick({
     infinite: true,
-    // arrows: true,
-    // responsive: true,
     slidesToShow: slides,
     slidesToScroll: slides,
   });
