@@ -2990,6 +2990,10 @@ blockquote{
   font-weight: 400;
   margin: 0px 0px 30px 0px;
 }
+h4.problems-title {
+  padding-left: 30px;
+  display: inline-block;
+}
 article.row.services-shortcode {
   margin: 0 2%;
 }
