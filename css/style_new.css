@@ -166,9 +166,12 @@ footer {
   overflow:hidden; 
   position:relative; 
   padding:20px 0px 20px 0px;
-  margin-bottom:50px;  
+  margin-bottom:50px;
+  margin-left: 0;
 }
-
+.footer .span3 {
+  margin-right:30px;
+}
 .footer p {
   margin: 0px 0px 0px 0px;
 }
@@ -230,7 +233,7 @@ h4.logo-footer {
 
 .after-footer {
   position:relative;
-  margin-bottom:30px;
+  margin-bottom:0px;
 }
 
 .after-footer p {
@@ -349,7 +352,7 @@ img.brand:hover  {
 }
 .big-unit-box article.row.services-shortcode .span10 h4 {
   color: white;
-  font-family:'MyriadProSemiBold',sans-serif;
+  font-family:'Open Sans',sans-serif;
   padding-top: 15px;
     margin:0;
 
@@ -357,7 +360,7 @@ img.brand:hover  {
 }
 .big-unit-box article.row.services-shortcode .span6 h4 {
   color:#5b5b5b;
-  font-family:'MyriadProSemiBold',sans-serif;
+  font-family:'Open Sans',sans-serif;
   margin-bottom: 5px;
   margin-top: 5px;
   font-size: 24px;
@@ -375,7 +378,9 @@ padding-top: 0;
   background: url(../img/ideas/services1.jpg) center bottom #212121;
   padding: 55px 0px 35px;
 }
-
+div.big-unit-box {
+  padding-top: 35px;
+}
 
 .big-unit-box-inside {
   border-left: 1px solid #363636; 
@@ -3038,7 +3043,7 @@ ul.infrestructure.span6 {
   color: white;
   line-height: 24px;
   font-weight: 400;
-  font-family: 'MyriadProRegular',sans-serif;
+  font-family: 'Open Sans',sans-serif;
   /* margin-left: -10px; */
   font-style: normal;
   font-variant-ligatures: initial;
