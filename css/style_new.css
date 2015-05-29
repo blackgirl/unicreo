@@ -3131,11 +3131,11 @@ ul.infrestructure.span6 {
   margin: 0;
 }
 .mans {
-  /*padding: 0;*/
-  height: 380px;
-  width: 40%;
-  padding: 2px 0 0;
-  margin-left: -30px;
+ /*padding: 0;*/
+height: 375px;
+width: 40%;
+padding: 7px 0 0;
+margin-left: -30px;
 }
 .bussiness-ex .mans {
   float: right;
