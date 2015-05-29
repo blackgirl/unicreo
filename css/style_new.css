@@ -3365,7 +3365,7 @@ ul.infrestructure.span6 {
   }*/
 
 
-  .modal-content ul li:hover {
+  .modal-content ul li:not(.unable):hover {
     color: #8f9cac;
   }
   .modal-content ul li:not(.unable) {

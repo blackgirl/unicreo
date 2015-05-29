@@ -97,13 +97,14 @@ $(document).ready( function() {
     modalShow($(this));
   });
 
-  $('#expertise, .modal-wrapper').on('mouseleave blur focusout', function() {
+  // $('#expertise, .modal-wrapper').on('mouseleave blur focusout', function() {
+  $('#expertise, .modal-content').on('mouseleave blur focusout', function() {
     modalHide();
   });
 
   // Filter projects by choosen techical expertise
   $('.modal-wrapper li').on('click', function() {
-    if(!($(this).is('.unable')))
+    // if(!($(this).is('.unable')))
       setExpertise('#select1', $(this).attr('data-value'));
   });
 
