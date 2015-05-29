@@ -1999,7 +1999,7 @@
 
         }
             var topOff = _.$slides.first().outerWidth()/2;
-            console.log(topOff);
+            // console.log(topOff);
                         if( $('.slick-next, .slick-prev').css('top') != topOff+'px')
 
             $('.slick-next, .slick-prev').css({'top': topOff-30})
