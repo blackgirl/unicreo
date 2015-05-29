@@ -2,10 +2,15 @@
 .span6.bussiness-ex {
   width: 50%;
 }
-.span12 {
+.show-and-hide-content .span12 {
   width:100%;
 }
 
+@media (min-width: 1920px) {
+  div#parallax-one.parallax {
+    background-size: contain;
+  }
+}
 @media (min-width: 1200px) {
   .offer-content .cases [class*="span"],
   .offer-content .attachments [class*="span"] {
@@ -69,6 +74,9 @@
 
   body {
     padding-top:70px;
+  }
+  .mean-container a.meanmenu-reveal {
+    padding: 28px;
   }
     #section {
      padding-top:0px;
@@ -147,6 +155,7 @@
 }
 /* HERE */
 @media (max-width: 768px) {
+  
   .breadcrumb {
     display:none !important;
   }
