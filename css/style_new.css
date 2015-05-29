@@ -459,7 +459,7 @@ padding-top: 0;
   overflow: hidden;
 }
 .span2.services-icon-2 {
-  margin-left: 45px;
+  margin-left: 30px;
 }
 .big-unit-box-inside .services-icon-2 {
  width: 62px;
@@ -1403,7 +1403,7 @@ ul.rs-slider {
   background: rgba(255, 255, 255, 0.95);
 }
 .navbar-inner .container {
-  margin-left: 45px;
+  /*margin-left: 45px;*/
 }
 .navbar-fixed-top {
 	position: fixed;
@@ -2995,7 +2995,7 @@ h4.problems-title {
   display: inline-block;
 }
 article.row.services-shortcode {
-  margin: 0 2%;
+  margin: 0;
 }
 article .span10>h4 {
   color: #FFF;
@@ -3417,11 +3417,11 @@ ul.infrestructure.span6 {
 
   .slick-prev, .slick-next {
     top: 120px;
-    width: 50px;
-    height: 50px;
+    width: 57px;
+    height: 57px;
     background-size: contain;
     z-index: 999;
-    /*opacity: .7;*/
+    opacity: 1;
   }
   .slick-prev {
     left: 0px;
