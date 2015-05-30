@@ -3018,17 +3018,14 @@ ul.infrestructure.span6 {
 }
 
 .technical-ex:hover .t-man {
-  background-color: white;
-  background: url(../img/sprite.png) no-repeat;
-  background-size: 187%;
-  background-position-x: 100%;
-  background-position-y: 100.45%;
+  /*background-position: 0 100%;*/
+  background: url(../img/m-t-hover.png) no-repeat;
+  background-size: contain;
 }
 .bussiness-ex:hover .b-man {
-  background: url(../img/sprite.png) no-repeat;
-  background-size: 187%;
-  background-position-y: 100.3%;
-  background-position-x: 0;
+  /*background-position: 0 100%;*/
+  background: url(../img/m-b-hover.png) no-repeat;
+  background-size: contain;
 }
 
 #expertise section.span6 {
@@ -3036,20 +3033,22 @@ ul.infrestructure.span6 {
   margin: 0;
 }
 .mans {
-  height: 375px;
-  width: 40%;
-  padding: 7px 0 0;
-  margin-left: -30px;
+ /*padding: 0;*/
+height: 375px;
+width: 40%;
+padding: 7px 0 0;
+margin-left: -30px;
 }
 .bussiness-ex .mans {
   float: right;
 }
   .bussiness-ex .b-man {
-    /*background: url(../img/m-b.png) no-repeat;*/
-    /*background-size: contain;*/
-    background: url(../img/sprite.png) no-repeat;
-    background-size: 187%;
-    background-position: 0 0;
+/*    width: 100%;
+    margin-right: 0;*/
+    background: url(../img/m-b.png) no-repeat;
+    background-size: contain;
+    /*background: url(../img/bus_man_sp.png) no-repeat;*/
+    /*background-position: 100% 100%;*/
   }
 .bussiness-ex ul {
   width: 60%;
@@ -3060,17 +3059,19 @@ ul.infrestructure.span6 {
 }
 
 .technical-ex .mans {
+/*  height: 380px;
+  width: 40%;
+  padding: 50px 0;
+  margin-left: -30px;*/
   float: left;
 }
   .technical-ex .t-man {
-    /*background: url(../img/m-t.png) no-repeat;*/
-    /*background-size: contain;*/
-    background-color: white;
-    background: url(../img/sprite.png) no-repeat;
-    background-size: 187%;
-        background-position-x: 100%;
-        background-position-y: 0px;
-
+/*    width: 100%;
+    margin-right: 0;*/
+    background: url(../img/m-t.png) no-repeat;
+    background-size: contain;
+  /*background: url(../img/tech_man_sp.png) no-repeat;*/
+  /*background-position: 100% 100%;*/
   }
 
 .technical-ex article {
