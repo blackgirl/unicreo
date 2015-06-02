@@ -1648,6 +1648,10 @@ select#select2 {
   text-overflow: "";
   text-indent: 0.1px;
   min-height: 32px;
+
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  padding-right: 30px;
 }
 select#select1 option,
 select#select2 option {
