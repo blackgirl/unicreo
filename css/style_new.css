@@ -1621,14 +1621,12 @@ width: 270px;
 background-color: #fff;
 border: 1px solid #ccc;
 border-radius:0px;
-/* height:25px; */
 margin-right:30px;
 margin-top:0;
 }
 select#select1,
 select#select2 {
   width:300px;
-  /*width:270px;*/
   padding:0px;
   padding-left:10px;
   border-radius: 0px;
@@ -1636,7 +1634,6 @@ select#select2 {
   border-color: #bcc4cf;
   background:url(../img/select-icon.png) no-repeat;
   background-position: 275px;
-  /*background-position: 245px;*/
   background-size: 15px;
   -webkit-appearance: none;
   font-size: 18px;
@@ -1645,6 +1642,18 @@ select#select2 {
   font-family: 'Open-Sans',sans-serif;
   font-weight: 400;
   line-height: 32px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  text-overflow: "";
+  text-indent: 0.1px;
+  min-height: 32px;
+}
+select#select1 option,
+select#select2 option {
+  min-height: 32px;
+  vertical-align: middle;
+  border: none;
 }
 select#select1 {
   margin-right:26px;
