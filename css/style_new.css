@@ -1633,9 +1633,9 @@ select#select2 {
   color: #bcc4cf;
   border-color: #bcc4cf;
   background:url(../img/select-icon.png) no-repeat;
+  -ms-background: none;
   background-position: 275px;
   background-size: 15px;
-  -webkit-appearance: none;
   font-size: 18px;
   margin-bottom:15px;
   height: auto;
@@ -1643,6 +1643,7 @@ select#select2 {
   font-weight: 400;
   line-height: 32px;
   -moz-appearance: none;
+  -ms-appearance: none;
   -webkit-appearance: none;
   appearance: none;
   text-overflow: "";
