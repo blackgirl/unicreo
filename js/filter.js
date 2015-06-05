@@ -52,7 +52,8 @@ $(document).ready( function() {
     var techTop = $('.technical-ex .services-box:nth-child(1)').find('.services-icon').offset().top;
     var busLeft = $('.bussiness-ex').offset().left;
     var bodyWidth = $('body').width();
-    var marginRight = parseInt($('#expertise').css('margin-right'));
+    //var marginRight = parseInt($('#expertise').css('margin-right'));
+    var marginRight = parseInt(($(document).width()-$("#expertise").width())/2);
     var eTop = self.offset().top;
     var eH = $('.services-box').height();
     var tH = parseInt($('.modal-triangle').css('border-left-width'));
