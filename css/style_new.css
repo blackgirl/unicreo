@@ -1676,6 +1676,8 @@ select#select2 {
 
   overflow-x: hidden;
   text-overflow: ellipsis;
+  text-overflow: -o-ellipsis-lastline;
+  text-overflow: -webkit-line-clamp;
   padding-right: 30px;
 }
 select#select1 option,
